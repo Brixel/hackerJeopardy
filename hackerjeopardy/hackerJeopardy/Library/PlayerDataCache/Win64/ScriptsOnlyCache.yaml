@@ -24,6 +24,7 @@ ScriptsOnlyBuild:
     - btn_plAnswerCorrect
     - btn_plAnswerWrong
     - btn_qNew
+    - btn_qRemove
     - btn_qSave
     - btn_randomizePlayer
     - btn_removePlayerFromList
@@ -91,10 +92,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -280,6 +279,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2346}
     - Class: 114
       Script: {instanceID: 2362}
+    - Class: 114
+      Script: {instanceID: 2506}
     - Class: 114
       Script: {instanceID: 2518}
     - Class: 114
