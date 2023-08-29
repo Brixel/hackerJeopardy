@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - btn_startGame
     - btn_stopMedia
     - btn_toMenu
+    - btn_virtualKeyboard
     - catBoxScript
     - gameSettings
     - keylistener_questions
@@ -52,7 +53,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -367,6 +367,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9052}
     - Class: 114
       Script: {instanceID: 9738}
+    - Class: 114
+      Script: {instanceID: 9740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1927,6 +1929,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: dff6fc11b7977c49cd1f1babaf840e7c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_virtualKeyboard
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b

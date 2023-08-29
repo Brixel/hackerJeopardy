@@ -76,6 +76,7 @@ public class keylistener_questions : MonoBehaviour
         }
         canAnswer = true;
         givenScore = false;
+        answered = -1;
 
         //show question text
         GameObject.Find("design1").transform.Find("q").Find("qPanel").Find("qName").GetComponent<TextMeshProUGUI>().text = gs.categoryList[gs.selectedC].questions[gs.selectedQ].questionText;

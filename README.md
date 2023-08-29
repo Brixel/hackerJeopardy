@@ -1,3 +1,5 @@
+Important message: The linux build is broken until further notice. There is an issue with iterating drives and files to open, and we're mitigating this by implementing an openfile dialog and a save file dialog later.
+
 # Hacker jeopardy
 ## _A visual presentation for Jeopardy style quiz games._
 

@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.IO;
 using TMPro;
+using SFB;
+
 
 public class btn_Import : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler
 {
@@ -49,7 +51,43 @@ public class btn_Import : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             transform.Find("pnl_text").Find("btnTxt").GetComponent<TextMeshProUGUI>().color = new Color(0, 255, 0, 255);
             Invoke("resetColor", 1f);
             GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().showImportWindow();
+            //var paths = StandaloneFileBrowser.OpenFilePanel("Select Jeopardy file", "", "jeopardy", false);
+            //if(paths.Length > 0)
+            //{
+            //    GameObject.Find("scriptHolder").GetComponent<gameSettings>().fileName = paths[0];
+            //    GameObject.Find("scriptHolder").GetComponent<gameSettings>().loadFile();
+
+            //    Invoke("updateStats", 1f);
+            //}
+
+
         }
+    }
+
+    public void updateStats()
+    {
+        gameSettings gs = GameObject.Find("scriptHolder").GetComponent<gameSettings>();
+        //set filename
+        GameObject.Find("txt_filename").GetComponent<TextMeshProUGUI>().text = gs.fileName;
+
+        //set current game name
+        GameObject.Find("pnl_currentQuestions").transform.Find("pnl_content").Find("txt_gamename").GetComponent<TextMeshProUGUI>().text = gs.gameName;
+
+        //set current cat count
+        GameObject.Find("pnl_currentQuestions").transform.Find("pnl_content").Find("txt_ccount").GetComponent<TextMeshProUGUI>().text = gs.categoryList.Count.ToString();
+
+        //set current q count
+        int totalQ = 0;
+        foreach (Category thisCat in gs.categoryList)
+        {
+            totalQ = totalQ + thisCat.questions.Count;
+        }
+        GameObject.Find("pnl_currentQuestions").transform.Find("pnl_content").Find("txt_qcount").GetComponent<TextMeshProUGUI>().text = totalQ.ToString();
+        GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().hideImportWindow();
+
+        //set game title and tagline
+        GameObject.Find("gameName").GetComponent<TextMeshProUGUI>().text = gs.gameName;
+        GameObject.Find("gameTagline").GetComponent<TextMeshProUGUI>().text = gs.tagLine;
     }
 
     void resetColor()
