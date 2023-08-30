@@ -91,18 +91,30 @@ public class btn_importFile : MonoBehaviour, IPointerEnterHandler, IPointerExitH
             transform.Find("pnl_text").Find("btnTxt").GetComponent<TextMeshProUGUI>().color = new Color(0, 255, 0, 255);
 
             //logic
-            if(GameObject.Find("drp_importFileList").GetComponent<TMP_Dropdown>().options.Count > 0)
-            {
-                string theFile = GameObject.Find("drp_importFileList").GetComponent<TMP_Dropdown>().options[GameObject.Find("drp_importFileList").GetComponent<TMP_Dropdown>().value].text;
-                if(File.Exists(theFile))
+            string theFile = "";
+                if (GameObject.Find("inp_impPath").GetComponent<TMP_InputField>().text.Length == 0)
                 {
-                    GameObject.Find("scriptHolder").GetComponent<gameSettings>().fileName = theFile;
-                    GameObject.Find("scriptHolder").GetComponent<gameSettings>().loadFile();
-
-                    Invoke("updateStats", 1f);
-                    
+                    //try to load from dropdown menu
+                    theFile = GameObject.Find("drp_importFileList").GetComponent<TMP_Dropdown>().options[GameObject.Find("drp_importFileList").GetComponent<TMP_Dropdown>().value].text;
                 }
-                
+                else
+                {
+                //try to load from textfield
+                theFile = GameObject.Find("inp_impPath").GetComponent<TMP_InputField>().text;
+                }
+            if (File.Exists(theFile))
+            {
+                GameObject.Find("scriptHolder").GetComponent<gameSettings>().fileName = theFile;
+                GameObject.Find("scriptHolder").GetComponent<gameSettings>().loadFile();
+
+                Invoke("updateStats", 1f);
+
+            }
+            else
+            {
+                //can't find or access file
+                //show error
+                GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color = new Color(GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color.r, GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color.g, GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color.b, 255);
             }
 
             Invoke("resetColor", 1f);
@@ -140,6 +152,8 @@ public class btn_importFile : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         transform.GetComponent<Image>().color = new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a);
         transform.Find("pnl_icon").GetComponent<Image>().color = new Color(255, 255, 255, 255);
         transform.Find("pnl_text").Find("btnTxt").GetComponent<TextMeshProUGUI>().color = new Color(255, 255, 255, 255);
+        //hide error
+        GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color = new Color(GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color.r, GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color.g, GameObject.Find("txt_importFileError").GetComponent<TextMeshProUGUI>().color.b, 0);
         isClicked = false;
     }
 

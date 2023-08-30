@@ -1,4 +1,4 @@
-Important message: The linux build is broken until further notice. There is an issue with iterating drives and files to open, and we're mitigating this by implementing an openfile dialog and a save file dialog later.
+Important message: The linux build is untested but could work.
 
 # Hacker jeopardy
 ## _A visual presentation for Jeopardy style quiz games._
@@ -15,9 +15,10 @@ This software provides a method of creating, editing and presenting a jeopardy s
 ### Obtaining a binary to run:
 - The easiest way to get going is to download the binaries straight from github (binaries_windows.zip or binaries_linux.tar) and unpack them either on disk or on a removable storage device.
 - If you want to create your own build, clone the project and open it with unity3D v.2022.3.4f1 go to file->build settings, configure to your liking and create build.
+
 ### Creating a new game
 - Start the game, you will be greeted with a static image on the (secondary) presentation screen and an operator view on the (primary) operator screen.
-- Press 'new questions'. This will promt you to select a drive to save the file, a file name, a game name and a tagline. The game name and tagline are used on the presentation screen to show while everyone waits for the game to start.
+- Press 'new questions'. This will promt you to select a removable drive to save the file and a file name or a full path wherever you like to store your file, a game name and a tagline. The game name and tagline are used on the presentation screen to show while everyone waits for the game to start.
 - Press create, this will take us to the question editor (which can also be accessed by pressing the 'edit questions' button)
 - Now it's time to create some categories and questions. First start by creating a new category in the left part of the window by pressing the 'new' button.
 - Give your category a name and a color (standard is blue) and press 'save/add'.
@@ -36,7 +37,7 @@ To stop editing press the X on the top right corner, This will also save the que
 
 ### Loading an existing game
 
-To load a game you made previously, press 'load questions' and select the drive/file you created earlier.
+To load a game you made previously, press 'load questions' and select the drive/file or full path to the file you created earlier.
 
 ### Add some players
 
@@ -83,5 +84,53 @@ At this point you can return to the board, if a player had the right answer, he 
  ---
  
  # Creating the buttons:
+ The buttons are designed to work wirelessly on a 9v battery. After using the buttons you might want to disconnect the 9v.
  
- todo
+ ## The box
+ In the folder hardware/boxes there is a design called boxdesign.svg. This is to be lasercutted from 3mm thick wood or plastic.
+ ## The hardware
+ For the harware we need:
+ - 1 momentary pushbutton with a diameter of 12mm (https://s.click.aliexpress.com/e/_DFizbJV)
+ - 1 ESP32 S2 mini
+ - 1 5v buck converter to regulate the power going into the ESP S2 mini
+ - 1 9v battery clip
+ - 1 9v battery
+ - 1 resistor (~10K Ohm) 
+ 
+ ## Wiring
+9V + to Buck converter IN +
+9V - to Buck convertor IN -
+Buck convertor OUT + to ESP32 VBUS
+Buck convertor OUT - TO ESP32 GND
+Button to ESP 14
+Resistor between ESP14 and ESP 3.3v
+Button to ESP GND
+
+## The software
+Flash the ESP32 S2 mini with the code found in the folder hardware/firmware/client, but before you do change the player index in the code (variable currentPlayer). 0-9 Player1 should be 0, player2 should be 1 etc... 
+
+# creating a host receiver
+For the host we use another ESP32 S2 mini, flash it with the code found in folder hardware/firmware/host and connect it to the system with a USB cable when in use.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

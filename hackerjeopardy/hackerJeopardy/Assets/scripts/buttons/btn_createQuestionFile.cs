@@ -127,7 +127,7 @@ public class btn_createQuestionFile : MonoBehaviour, IPointerEnterHandler, IPoin
 
             //logic
             //validate input
-            if(GameObject.Find("inp_newQfileName").GetComponent<TMP_InputField>().text != "")
+            if(GameObject.Find("inp_newQfileName").GetComponent<TMP_InputField>().text.Length > 0 || GameObject.Find("inp_newQFullPath").GetComponent<TMP_InputField>().text.Length > 0)
             {
                 //there is a filename
                 //is it dirty?
@@ -186,8 +186,19 @@ public class btn_createQuestionFile : MonoBehaviour, IPointerEnterHandler, IPoin
                                 }
                                 if (taglineDirty == false)
                                 {
+                                    string filePath = "";
+                                    if(GameObject.Find("inp_newQFullPath").GetComponent<TMP_InputField>().text.Length == 0)
+                                    {
+                                        //create from dropdown and filename
+                                        filePath = GameObject.Find("drp_driveList").GetComponent<TMP_Dropdown>().options[GameObject.Find("drp_driveList").GetComponent<TMP_Dropdown>().value].text + GameObject.Find("inp_newQfileName").GetComponent<TMP_InputField>().text + ".jeopardy";
+                                    }
+                                    else
+                                    {
+                                        //create from specified path
+                                        filePath = GameObject.Find("inp_newQFullPath").GetComponent<TMP_InputField>().text;
+                                    }
                                     //does the file exist already?
-                                    if (File.Exists(GameObject.Find("drp_driveList").GetComponent<TMP_Dropdown>().options[GameObject.Find("drp_driveList").GetComponent<TMP_Dropdown>().value].text + GameObject.Find("inp_newQfileName").GetComponent<TMP_InputField>().text + ".jeopardy") == false)
+                                    if (File.Exists(filePath) == false)
                                     {
                                         //remove current categories
                                         GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList.Clear();
@@ -199,7 +210,7 @@ public class btn_createQuestionFile : MonoBehaviour, IPointerEnterHandler, IPoin
                                         GameObject.Find("scriptHolder").GetComponent<gameSettings>().tagLine = GameObject.Find("inp_newQgameTagline").GetComponent<TMP_InputField>().text;
 
                                         //set file name
-                                        GameObject.Find("scriptHolder").GetComponent<gameSettings>().fileName = GameObject.Find("drp_driveList").GetComponent<TMP_Dropdown>().options[GameObject.Find("drp_driveList").GetComponent<TMP_Dropdown>().value].text + GameObject.Find("inp_newQfileName").GetComponent<TMP_InputField>().text + ".jeopardy";
+                                        GameObject.Find("scriptHolder").GetComponent<gameSettings>().fileName = filePath;
 
                                         //save the file empty for now
                                         GameObject.Find("scriptHolder").GetComponent<gameSettings>().saveFile();
