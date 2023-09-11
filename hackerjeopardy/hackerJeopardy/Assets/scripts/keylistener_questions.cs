@@ -16,6 +16,11 @@ public class keylistener_questions : MonoBehaviour
     public bool answerRevealed = false;
     List<int> playersAnswered;
 
+    int plTimer = 0;
+    int qTimer = 0;
+    bool plIsCounting = false;
+    bool qIsCounting = false;
+
 
     void Start()
     {
@@ -59,9 +64,52 @@ public class keylistener_questions : MonoBehaviour
                         GameObject.Find("scriptHolder").GetComponent<soundScript>().stopMusic();
                         //stop video
                         GameObject.Find("qVideo").GetComponent<VideoPlayer>().Stop();
+                        //start player timer
+                        plTimer = 0;
+                        plIsCounting = true;
+                        GameObject.Find("txt_plTimer").GetComponent<TextMeshProUGUI>().text = "0";
+                        GameObject.Find("txt_plTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
+                        Invoke("plCountDown", 1f);
+                        //stop questions counter
+                        qIsCounting = false;
                     }
                 }
             }
+        }
+    }
+
+    void plCountDown()
+    {
+        plTimer++;
+        GameObject.Find("txt_plTimer").GetComponent<TextMeshProUGUI>().text = plTimer.ToString();
+        if (plTimer >= 10)
+        {
+            GameObject.Find("txt_plTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 0, 0, 255);
+        }
+        else
+        {
+            GameObject.Find("txt_plTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
+        }
+        if(plIsCounting == true)
+        {
+            Invoke("plCountDown", 1f);
+        }
+    }
+    void qCountDown()
+    {
+        qTimer++;
+        GameObject.Find("txt_qTimer").GetComponent<TextMeshProUGUI>().text = qTimer.ToString();
+        if (qTimer >= 30)
+        {
+            GameObject.Find("txt_qTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 0, 0, 255);
+        }
+        else
+        {
+            GameObject.Find("txt_qTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
+        }
+        if (qIsCounting == true)
+        {
+            Invoke("qCountDown", 1f);
         }
     }
 
@@ -77,6 +125,11 @@ public class keylistener_questions : MonoBehaviour
         canAnswer = true;
         givenScore = false;
         answered = -1;
+
+        qTimer = 0;
+        qIsCounting = true;
+        GameObject.Find("txt_qTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
+        Invoke("qCountDown", 1f);
 
         //show question text
         GameObject.Find("design1").transform.Find("q").Find("qPanel").Find("qName").GetComponent<TextMeshProUGUI>().text = gs.categoryList[gs.selectedC].questions[gs.selectedQ].questionText;
@@ -152,6 +205,8 @@ public class keylistener_questions : MonoBehaviour
         {
             if (givenScore == false)
             {
+                qIsCounting = false;
+                plIsCounting = false;
                 givenScore = true;
                 gs.players[answered].playerScore = gs.players[answered].playerScore + gs.categoryList[gs.selectedC].questions[gs.selectedQ].value;
                 gs.updateCredits(answered, gs.categoryList[gs.selectedC].questions[gs.selectedQ].value,true);
@@ -171,6 +226,7 @@ public class keylistener_questions : MonoBehaviour
         {
             if (givenScore == false)
             {
+                plIsCounting = false;
                 givenScore = true;
                 gs.players[answered].playerScore = gs.players[answered].playerScore - gs.categoryList[gs.selectedC].questions[gs.selectedQ].value;
                 gs.updateCredits(answered, gs.categoryList[gs.selectedC].questions[gs.selectedQ].value,false);

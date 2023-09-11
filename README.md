@@ -6,7 +6,7 @@ Important message: The linux build is untested but could work.
 This software provides a method of creating, editing and presenting a jeopardy style quiz game up to 10 players.
 
 ## Requirements:
-- A dual screen setup with a resolution of at least 1920*1080. (One for the presenter, one for the audience/players. Windows and Linux supported).
+- A dual screen setup with a resolution of at least 1920*1080. (Will be forced) (One for the presenter, one for the audience/players. Windows and Linux supported).
 - A USB or other removable storage device to save the questions to.
 - (up to) 10 hardware buttons for the players to buzz.
 - [optional] Something to output the sound to.

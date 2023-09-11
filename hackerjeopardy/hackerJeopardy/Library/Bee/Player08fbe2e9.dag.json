@@ -2107,7 +2107,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 34696,
       "PayloadLength": 21,
-      "PayloadDebugContentSnippet": "kefcom\nhackerJeopardy",
+      "PayloadDebugContentSnippet": "Brixel\nhackerJeopardy",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"

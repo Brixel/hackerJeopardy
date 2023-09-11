@@ -55,9 +55,11 @@ public class gameSettings : MonoBehaviour
             firstCat = true;
             finishedGame = false;
             Display.displays[0].Activate();
+            Display.displays[0].SetRenderingResolution(1920, 1080);
             if(Display.displays.Length > 1)
             {
                 Display.displays[1].Activate();
+                Display.displays[1].SetRenderingResolution(1920, 1080);
             }
             //play some music
             transform.GetComponent<soundScript>().playMusic();
