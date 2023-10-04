@@ -10,7 +10,7 @@ using System.Linq;
 public class op_initScripts : MonoBehaviour
 {
     public GameObject playerPrefab;
-    int windowState;
+    public int windowState;
     // Start is called before the first frame update
     void Start()
     {
@@ -185,6 +185,56 @@ public class op_initScripts : MonoBehaviour
         GameObject.Find("txt_playerNameError").GetComponent<TextMeshProUGUI>().color = new Color(255, 0, 0, 0);
         //no more open windows
         windowState = 0;
+    }
+
+    public void addTeam()
+    {
+        if (windowState == 0) // check if other windows are open
+        {
+            //show import window
+            GameObject.Find("window_importTeams").transform.position = new Vector3(GameObject.Find("window_importTeams").transform.position.x, 0, 0);
+
+            //clear dropdown box
+            GameObject.Find("drp_importTeamDriveList").GetComponent<TMP_Dropdown>().options.Clear();
+
+            //populate dropdown box
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            int foundDrives = 0;
+            foreach (DriveInfo thisDrive in allDrives)
+            {
+                if (thisDrive.DriveType == DriveType.Removable)
+                {
+                    foundDrives++;
+                    TMP_Dropdown.OptionData thisOption = new TMP_Dropdown.OptionData();
+                    thisOption.text = thisDrive.Name;
+                    GameObject.Find("drp_importTeamDriveList").GetComponent<TMP_Dropdown>().options.Add(thisOption);
+                }
+            }
+
+            GameObject.Find("drp_importTeamDriveList").GetComponent<TMP_Dropdown>().RefreshShownValue();
+
+            //enable monitor
+            GameObject.Find("btn_importTeam").GetComponent<btn_importTeam>().setActive();
+
+            //if there are files in the list, set the last index to a high number to trigger a file scan
+            if (foundDrives > 0)
+            {
+                GameObject.Find("btn_importTeam").GetComponent<btn_importTeam>().lastIndex = 99999;
+            }
+
+        }
+    }
+
+    public void hideAddTeamWindow()
+    {
+        //hide window
+        GameObject.Find("window_importTeams").transform.position = new Vector3(GameObject.Find("window_importTeams").transform.position.x, 1112, 0);
+
+        //no more open windows
+        windowState = 0;
+
+        //deactivate monitor
+        GameObject.Find("btn_importTeam").GetComponent<btn_importTeam>().setInActive();
     }
 
     public void renderPlayers()

@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - btn_addPlayer
     - btn_addPlayer2
     - btn_addPlayerCancel
+    - btn_backFromTS
     - btn_catNew
     - btn_catRemove
     - btn_catSave
@@ -19,8 +20,11 @@ ScriptsOnlyBuild:
     - btn_export
     - btn_importCancel
     - btn_importFile
+    - btn_importTeam
+    - btn_importTeamCancel
     - btn_newQuestionsFile1
     - btn_openAnswers
+    - btn_pickTeam
     - btn_plAnswerCorrect
     - btn_plAnswerWrong
     - btn_qNew
@@ -32,6 +36,7 @@ ScriptsOnlyBuild:
     - btn_showNextCat
     - btn_startGame
     - btn_stopMedia
+    - btn_teamSelector
     - btn_toMenu
     - btn_virtualKeyboard
     - catBoxScript
@@ -48,6 +53,7 @@ ScriptsOnlyBuild:
     - scoreFloat
     - soundScript
     - tabScript
+    - teamSelectorScript
     - testScript
     - videoLoader
     Unity.2D.Animation.Editor.dll:
@@ -93,8 +99,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -369,7 +377,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9738}
     - Class: 114
-      Script: {instanceID: 9770}
+      Script: {instanceID: 9740}
+    - Class: 114
+      Script: {instanceID: 47230}
+    - Class: 114
+      Script: {instanceID: 59806}
+    - Class: 114
+      Script: {instanceID: 63176}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -464,6 +478,67 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 328
+      Script: {instanceID: 0}
+    Assets/Scenes/teamSelector.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1624}
+    - Class: 114
+      Script: {instanceID: 2518}
+    - Class: 114
+      Script: {instanceID: 2878}
+    - Class: 114
+      Script: {instanceID: 3128}
+    - Class: 114
+      Script: {instanceID: 6038}
+    - Class: 114
+      Script: {instanceID: 6758}
+    - Class: 114
+      Script: {instanceID: 6976}
+    - Class: 114
+      Script: {instanceID: 7382}
+    - Class: 114
+      Script: {instanceID: 9740}
+    - Class: 114
+      Script: {instanceID: 41216}
+    - Class: 114
+      Script: {instanceID: 109150}
+    - Class: 114
+      Script: {instanceID: 136820}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -792,7 +867,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: fb2a772eb8f56028549c79a06b0aeea0
+      Hash: 007a0d7c825e44626ddcb2ee38cbd259
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: gameSettings
@@ -1776,7 +1851,7 @@ ScriptsOnlyBuild:
     className: btn_toMenu
   - hash:
       serializedVersion: 2
-      Hash: f787ebc9052e685e422da5b37eac6c4b
+      Hash: 157acfd452c3ab3de381ce3567c98b4b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: op_initScripts
@@ -1932,6 +2007,12 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: dff6fc11b7977c49cd1f1babaf840e7c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_virtualKeyboard
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1944,13 +2025,44 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: dff6fc11b7977c49cd1f1babaf840e7c
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: btn_virtualKeyboard
+    className: teamSelectorScript
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_teamSelector
+  - hash:
+      serializedVersion: 2
+      Hash: 61d552492eebe9867e5e4154240443be
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_importTeam
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_importTeamCancel
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_pickTeam
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: btn_backFromTS
   platform: 19
   scenePathNames:
   - Assets/Scenes/init.unity
   - Assets/Scenes/board.unity
   - Assets/Scenes/question.unity
+  - Assets/Scenes/teamSelector.unity
   playerPath: E:/jeopardybuild/hackerJeopardy.exe

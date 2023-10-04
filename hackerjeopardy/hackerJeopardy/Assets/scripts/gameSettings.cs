@@ -40,6 +40,8 @@ public class gameSettings : MonoBehaviour
     public bool firstCat;
     public bool finishedGame;
 
+    public List<string> TeamsList;
+
 
 
 
@@ -63,7 +65,6 @@ public class gameSettings : MonoBehaviour
             }
             //play some music
             transform.GetComponent<soundScript>().playMusic();
-            
         }
 
         questionBoxColor_unavailable = new Color32(128, 128, 128, 20);
@@ -133,6 +134,58 @@ public class gameSettings : MonoBehaviour
         }
     }
 
+    public void addPlayer(string playerName)
+    {
+        //check if player limit is reached
+        if (GameObject.Find("scriptHolder").GetComponent<gameSettings>().players.Count < 10)
+        {
+            //check if name is taken
+            bool found = false;
+            foreach (Player findPlayer in GameObject.Find("scriptHolder").GetComponent<gameSettings>().players)
+            {
+                if (findPlayer.playerName == playerName)
+                {
+                    found = true;
+                }
+            }
+            if (found == false)
+            {
+                //add this player
+                Player thisPlayer = new Player();
+                thisPlayer.playerName = playerName;
+                thisPlayer.playerScore = 0;
+                GameObject.Find("scriptHolder").GetComponent<gameSettings>().players.Add(thisPlayer);
+                
+                //remove window (if on init scene)
+                if(SceneManager.GetActiveScene().name == "init")
+                {
+                    GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().renderPlayers();
+                    GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().hideAddPlayerWindow();
+
+                    //clear name
+                    GameObject.Find("inp_playerName").GetComponent<TMP_InputField>().text = "";
+                }
+                
+            }
+            else
+            {
+                //show error
+                if (SceneManager.GetActiveScene().name == "init")
+                {
+                    GameObject.Find("txt_playerNameError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 255);
+                }
+            }
+        }
+        else
+        {
+            //player limit is reached
+            if (SceneManager.GetActiveScene().name == "init")
+            {
+                GameObject.Find("txt_playerLimitError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 255);
+            }
+        }
+    }
+
     public void updateCredits(int playerId, int credits, bool positive)
     {
         GameObject thisObj = Instantiate(playerScoredPrefab, GameObject.Find("Canvas").transform);
@@ -170,6 +223,20 @@ public class gameSettings : MonoBehaviour
         tagLine = allText[1];
         string toDeserialize = allText[2];
         categoryList = JsonConvert.DeserializeObject<List<Category>>(toDeserialize);
+    }
+
+    public void loadTeams(string theFile)
+    {
+        TeamsList = new List<string>();
+        string[] allText = File.ReadAllText(theFile).Split("\n");
+        foreach(string line in allText)
+        {
+            TeamsList.Add(line);
+        }
+        if(TeamsList.Count > 0)
+        {
+            SceneManager.LoadScene("teamSelector");
+        }
     }
 
 }

@@ -43,6 +43,11 @@ To load a game you made previously, press 'load questions' and select the drive/
 
 To play the game you need some players, press the 'add player' at the bottom left of the screen to add a player.
 
+### Or teams
+
+If you plan to play with teams and want to randomly pick some teams from a large list. Just create a file with the .teams extention on a removable drive with all team names seperated by a newline.
+When the 'Team Selector' is selected, you are able to pick some ranom team names from the list. When returning to the home screen the teams are added as player names.
+
 ### Ready to start!
 
 When ready to start the game, press 'start game' in the bottom right corner of the screen.
