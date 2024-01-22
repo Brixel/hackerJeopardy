@@ -40,6 +40,8 @@ public class op_boardScript : MonoBehaviour
             //show it
             GameObject.Find("pnl_presentCategories").GetComponent<RectTransform>().offsetMin = new Vector2(0, 0); //left, bottom
             GameObject.Find("pnl_presentCategories").GetComponent<RectTransform>().offsetMax = new Vector2(-374, -47); //right, top
+            //set title
+            GameObject.Find("cat_Title").GetComponent<TextMeshProUGUI>().text = "Present categories (1/" + gs.categoryList.Count + ")";
 
         }
         else

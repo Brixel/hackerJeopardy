@@ -66,6 +66,8 @@ public class catBoxScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
                 thisQGo.GetComponent<qBoxScript>().setQID(qCounter);
                 qCounter++;
             }
+            //update category hint:
+            GameObject.Find("txt_catHint2").GetComponent<TextMeshProUGUI>().text = gs.categoryList[catID].categoryHint;
 
             Invoke("resetColor", 1f);
 

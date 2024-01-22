@@ -13,6 +13,8 @@ public class btn_showNextCat : MonoBehaviour, IPointerEnterHandler, IPointerExit
     gameSettings gs;
     int catShown;
     int qShown;
+
+    public Sprite boardSprite;
     
 
     void Start()
@@ -70,6 +72,12 @@ public class btn_showNextCat : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 //update text field
                 GameObject.Find("txt_catNamePresenting").GetComponent<TextMeshProUGUI>().text = gs.categoryList[catShown].categoryName;
 
+                //update title
+                GameObject.Find("cat_Title").GetComponent<TextMeshProUGUI>().text = "Present categories (" + (catShown + 1).ToString() + "/" + gs.categoryList.Count + ")";
+
+                //update hint:
+                GameObject.Find("txt_catHint").GetComponent<TextMeshProUGUI>().text = gs.categoryList[catShown].categoryHint;                
+
                 //update values
                 GameObject.Find("txt_values").GetComponent<TextMeshProUGUI>().text = "";
                 foreach(Question thisQ in gs.categoryList[catShown].questions)
@@ -87,6 +95,15 @@ public class btn_showNextCat : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 }
                 qShown = 0;
                 Invoke("showQs", 2f);
+            }
+            else
+            {
+                if (catShown == gs.categoryList.Count)
+                {
+                    //hide the panel
+                    GameObject.Find("pnl_presentCategories").GetComponent<RectTransform>().offsetMin = new Vector2(0, 1234);  // left, bottom
+                    GameObject.Find("pnl_presentCategories").GetComponent<RectTransform>().offsetMax = new Vector2(-374, 1187);  // right,top
+                }
             }
         }
     }
@@ -109,12 +126,12 @@ public class btn_showNextCat : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             //all Q's shown
             catShown++;
-            if(catShown == gs.categoryList.Count)
+            if(catShown == gs.categoryList.Count)           
             {
-                //hide the panel
-                GameObject.Find("pnl_presentCategories").GetComponent<RectTransform>().offsetMin = new Vector2(0, 1234);  // left, bottom
-                GameObject.Find("pnl_presentCategories").GetComponent<RectTransform>().offsetMax = new Vector2(-374, 1187);  // right,top
                 gs.firstCat = false;
+                GameObject.Find("btn_nextCat").transform.Find("pnl_text").transform.Find("btnTxt").GetComponent<TextMeshProUGUI>().text = "Show Board";
+                GameObject.Find("btn_nextCat").transform.Find("pnl_icon").GetComponent<Image>().sprite = boardSprite;
+                resetColor();
             }
             else
             {

@@ -56,6 +56,7 @@ public class btn_catNew : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().value = GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().options.Count;
 
             GameObject.Find("inp_catName").GetComponent<TMP_InputField>().text = "";
+            GameObject.Find("inp_catHint").GetComponent<TMP_InputField>().text = "";
             GameObject.Find("inp_catName").GetComponent<TMP_InputField>().ActivateInputField();
             GameObject.Find("txt_catID").GetComponent<TextMeshProUGUI>().text = "-1";
         }

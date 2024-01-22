@@ -47,6 +47,9 @@ public class btn_revealAnswer : MonoBehaviour, IPointerEnterHandler, IPointerExi
             transform.Find("pnl_text").Find("btnTxt").GetComponent<TextMeshProUGUI>().color = new Color(0, 255, 0, 255);
 
             //logic
+            //play timeout sound
+            GameObject.Find("scriptHolder").GetComponent<soundScript>().playTimeOut();
+            //reveal answer
             GameObject.Find("keyScript").GetComponent<keylistener_questions>().revealAnswer();
             
             Invoke("resetColor", 1f);
@@ -57,7 +60,6 @@ public class btn_revealAnswer : MonoBehaviour, IPointerEnterHandler, IPointerExi
     {
         transform.Find("pnl_icon").GetComponent<Image>().sprite = boardPic;
         transform.Find("pnl_text").Find("btnTxt").GetComponent<TextMeshProUGUI>().text = "Return";
-        GameObject.Find("scriptHolder").GetComponent<soundScript>().playTimeOut();
     }
 
 

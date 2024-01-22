@@ -1,448 +1,345 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1696460503692019, "dur":15407, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460503707432, "dur":381, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460503707858, "dur":408, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460503708288, "dur":4154, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460503712444, "dur":61830935, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460565543380, "dur":335, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460565543716, "dur":106, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460565544094, "dur":9807, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1696460503708477, "dur":3975, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460503712455, "dur":3718, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460503717216, "dur":821, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_16d3.info" }}
-,{ "pid":12345, "tid":1, "ts":1696460503718043, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Linux64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1696460503718162, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Linux64\\Data\\RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":1, "ts":1696460503718258, "dur":93, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Linux64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":1, "ts":1696460503718527, "dur":228, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503718757, "dur":347, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503719108, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503719219, "dur":663, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503719883, "dur":418, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503720303, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503720434, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\System.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503720558, "dur":170, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\netstandard.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503720729, "dur":257, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503720987, "dur":283, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503721271, "dur":168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503721440, "dur":1239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503722680, "dur":157, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503722839, "dur":1410, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503724252, "dur":501, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Drawing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503724754, "dur":131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503724887, "dur":141, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503725030, "dur":179, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503725210, "dur":241, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Net.Http.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503725452, "dur":150, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503725603, "dur":596, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503726200, "dur":287, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503726489, "dur":245, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503726735, "dur":137, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503726873, "dur":190, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503727067, "dur":2059, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503729128, "dur":1721, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503730850, "dur":2887, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\mscorlib.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460503733738, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playerfe50b1f7-inputdata.json" }}
-,{ "pid":12345, "tid":1, "ts":1696460503718041, "dur":15894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/LinuxPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1696460503734615, "dur":79329, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1696460503819426, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\LinuxPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1696460503819425, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1696460503845005, "dur":2580791, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1696460506425801, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1696460506545786, "dur":1213701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1696460507759608, "dur":525, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460509116274, "dur":25511436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460537388441, "dur":87, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460534627931, "dur":2760609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460537388626, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460537388707, "dur":6384698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460543773544, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460543773663, "dur":1248119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460545021882, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460545022095, "dur":2057887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460547080090, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1696460547080166, "dur":418742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460547499049, "dur":6110734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1696460553609890, "dur":8587215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":1, "ts":1696460562197228, "dur":3346021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1696460503708614, "dur":3877, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460503712495, "dur":1683, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460503714178, "dur":2013, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460503716192, "dur":225, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":2, "ts":1696460503932396, "dur":2573376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":2, "ts":1696460506505849, "dur":5959, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1696460506505847, "dur":5963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1696460506511811, "dur":34064, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460506580565, "dur":18121450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1696460524702147, "dur":573462, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460525275628, "dur":10181215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460535456962, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460535457078, "dur":2510292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460537967446, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460537967575, "dur":6792124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460544759853, "dur":353671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460545113610, "dur":203, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460545113829, "dur":2056554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460547170474, "dur":251, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460547170735, "dur":408429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460547579255, "dur":212, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1696460547579479, "dur":8251439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1696460555831086, "dur":8896086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1696460564727274, "dur":816180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460503708643, "dur":3868, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460503712516, "dur":1563, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460503714079, "dur":2114, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460503716203, "dur":7942, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
-,{ "pid":12345, "tid":3, "ts":1696460503716194, "dur":7953, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1696460503724149, "dur":36397, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460505751064, "dur":986880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1696460506738018, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/UnityPlayer.so" }}
-,{ "pid":12345, "tid":3, "ts":1696460506738127, "dur":36701, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460506774872, "dur":27229387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/UnityPlayer.so" }}
-,{ "pid":12345, "tid":3, "ts":1696460534004361, "dur":3247191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696460537251633, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460537251814, "dur":6478260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.Collections.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696460543730193, "dur":10909, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460543741131, "dur":1214476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696460544955712, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460544955813, "dur":1186196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696460546142120, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460546142264, "dur":1231282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696460547373634, "dur":10971, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1696460547384621, "dur":538224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1696460548864699, "dur":11293352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Resources/UnityPlayer.png" }}
-,{ "pid":12345, "tid":3, "ts":1696460560158255, "dur":5123035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1696460565281383, "dur":262049, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460503708515, "dur":3945, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460503712468, "dur":1696, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460503714165, "dur":2038, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460503716204, "dur":359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1696460506358428, "dur":379553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1696460506738061, "dur":36713, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460507760147, "dur":25056983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460532817272, "dur":4349054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460537166459, "dur":5660458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460542827063, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460542827160, "dur":2128453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460544955795, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460544955874, "dur":1186131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460546142156, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460546142327, "dur":1231203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460547373618, "dur":10955, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460547384594, "dur":538235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460547922915, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1696460547923105, "dur":12234959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1696460560158224, "dur":4580014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1696460564738296, "dur":805146, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460503708555, "dur":3918, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460503712476, "dur":1591, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460503714068, "dur":2131, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460503716202, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1696460505751035, "dur":922180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1696460506673325, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1696460507759456, "dur":25057541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1696460532817132, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460532817230, "dur":4349013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460537166427, "dur":5660473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460542827063, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460542827202, "dur":2128415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460544955796, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460544955890, "dur":1186108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460546142120, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460546142283, "dur":1231295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460547373663, "dur":11009, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460547384684, "dur":538149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460547922927, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1696460547923116, "dur":13634963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1696460561558227, "dur":3760133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/level0" }}
-,{ "pid":12345, "tid":5, "ts":1696460565318416, "dur":224970, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460503708589, "dur":3892, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460503712486, "dur":1482, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460503713968, "dur":2229, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460503716217, "dur":8349, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1696460503716198, "dur":8370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1696460503724569, "dur":35987, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460505751067, "dur":986873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1696460506738008, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy.x86_64" }}
-,{ "pid":12345, "tid":6, "ts":1696460506738131, "dur":36674, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460506774820, "dur":25481335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy.x86_64" }}
-,{ "pid":12345, "tid":6, "ts":1696460532256317, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460532256407, "dur":3200441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460535456924, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460535457030, "dur":3016588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460538473763, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460538473954, "dur":6452699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460544926756, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460544926957, "dur":1140578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460546067633, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460546067789, "dur":1219129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460547286995, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460547287102, "dur":540291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460547827481, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1696460547827687, "dur":12330370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1696460560158230, "dur":5159444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1696460565317737, "dur":225672, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460503708633, "dur":3868, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460503712505, "dur":1529, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460503714035, "dur":2176, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460503716223, "dur":8341, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":7, "ts":1696460503716211, "dur":8354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1696460503724567, "dur":36001, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460505751048, "dur":922209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1696460506673350, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/config" }}
-,{ "pid":12345, "tid":7, "ts":1696460506673541, "dur":18602209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/config" }}
-,{ "pid":12345, "tid":7, "ts":1696460525275883, "dur":2409592, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460527685500, "dur":7771429, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460535457026, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460535457167, "dur":2510207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460537967500, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460537967615, "dur":6792093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460544759883, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460544759969, "dur":353558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460545113610, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460545113781, "dur":2056580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460547170438, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460547170625, "dur":408531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460547579251, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460547579448, "dur":8251443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1696460555830988, "dur":59, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1696460555831054, "dur":8896111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":7, "ts":1696460564727267, "dur":816103, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460503708673, "dur":3850, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460503712528, "dur":1367, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460503713895, "dur":2300, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460503716198, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1696460506247899, "dur":490066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1696460506738065, "dur":36717, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460507760247, "dur":26867470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460534627806, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460534627874, "dur":2760607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460537388662, "dur":7371051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460544759858, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460544759943, "dur":1223834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460545983917, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460545984100, "dur":1302713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460547286899, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460547286970, "dur":540418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460547827475, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1696460547827589, "dur":12330490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1696460560158222, "dur":5159930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1696460565318223, "dur":225179, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460503708697, "dur":3836, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460503712536, "dur":1673, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460503714209, "dur":1975, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460503716200, "dur":21865, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":9, "ts":1696460503716185, "dur":21881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":9, "ts":1696460503738067, "dur":22552, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460506354552, "dur":383408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":9, "ts":1696460506738051, "dur":36709, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460507760149, "dur":25057011, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460532817301, "dur":4140008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460536957514, "dur":5869411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460542827032, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460542827141, "dur":2099541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460544926771, "dur":188, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460544926971, "dur":1140533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460546067633, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460546067749, "dur":1219176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460547287015, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460547287167, "dur":540178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460547827474, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460547827541, "dur":10182181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1696460558009825, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1696460558009974, "dur":6717182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":9, "ts":1696460564727272, "dur":816208, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460503708725, "dur":3817, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460503712547, "dur":455, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460503713002, "dur":3211, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460503716214, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":10, "ts":1696460505751030, "dur":922232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":10, "ts":1696460506673356, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":10, "ts":1696460506774839, "dur":26042165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":10, "ts":1696460532817100, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460532817224, "dur":4140081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":10, "ts":1696460536957454, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460536957543, "dur":5869365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1696460542827062, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460542827145, "dur":2128529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1696460544955856, "dur":1186157, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1696460546142120, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460546142250, "dur":1231292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1696460547373641, "dur":11000, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1696460547384655, "dur":538224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1696460547922976, "dur":13635107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":10, "ts":1696460561558223, "dur":3760306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/level1" }}
-,{ "pid":12345, "tid":10, "ts":1696460565318589, "dur":224805, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460503708767, "dur":3785, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460503712552, "dur":3628, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460503716184, "dur":256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so" }}
-,{ "pid":12345, "tid":11, "ts":1696460503716441, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460503864033, "dur":2588843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so" }}
-,{ "pid":12345, "tid":11, "ts":1696460506453021, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1696460506545795, "dur":2570467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1696460509116341, "dur":119810, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460509236180, "dur":26220713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460535456982, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460535457129, "dur":3016498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460538473720, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460538473945, "dur":6285782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460544759908, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460544760016, "dur":353531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460545113649, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460545113869, "dur":2056495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460547170447, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460547170677, "dur":408467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460547579234, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460547579425, "dur":8251471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1696460555830999, "dur":62, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1696460555831065, "dur":8896061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":11, "ts":1696460564727190, "dur":816186, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460503708795, "dur":3765, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460503712560, "dur":3622, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460503716184, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/x86_64/libmono-native.so" }}
-,{ "pid":12345, "tid":12, "ts":1696460503845012, "dur":2607853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/x86_64/libmono-native.so" }}
-,{ "pid":12345, "tid":12, "ts":1696460506452985, "dur":5490, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
-,{ "pid":12345, "tid":12, "ts":1696460506452983, "dur":5494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":12, "ts":1696460506458478, "dur":47258, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460506546139, "dur":2570130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":12, "ts":1696460509116377, "dur":119793, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460509236197, "dur":26220717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1696460535457014, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460535457144, "dur":3016489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":12, "ts":1696460538473726, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460538473950, "dur":6547849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":12, "ts":1696460545021875, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460545022067, "dur":2057929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1696460547080101, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460547080249, "dur":418652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1696460547499000, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1696460547499157, "dur":2665909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1696460550165189, "dur":12031898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":12, "ts":1696460562197232, "dur":3266042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":12, "ts":1696460565463347, "dur":80036, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460503708830, "dur":3738, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460503712569, "dur":3620, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460503716194, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":13, "ts":1696460503932423, "dur":2573363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":13, "ts":1696460506505857, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":13, "ts":1696460506505979, "dur":29158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460506598137, "dur":18103874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":13, "ts":1696460524702122, "dur":573464, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460525275611, "dur":10181323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460535457029, "dur":459414, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460535916467, "dur":5940794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460541857358, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460541857521, "dur":2861211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460544718800, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460544718989, "dur":302819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460545021897, "dur":251, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460545022205, "dur":2057797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460547080141, "dur":418792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460547499026, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1696460547499181, "dur":8331743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1696460555831059, "dur":8896100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":13, "ts":1696460564727225, "dur":816149, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460503708866, "dur":3717, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460503712583, "dur":3595, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460503716183, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so" }}
-,{ "pid":12345, "tid":14, "ts":1696460503863995, "dur":2561806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so" }}
-,{ "pid":12345, "tid":14, "ts":1696460506425881, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":14, "ts":1696460506426034, "dur":26788, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460506580554, "dur":2535724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":14, "ts":1696460509116382, "dur":119796, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460509236200, "dur":26220704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460535457003, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460535457132, "dur":2510224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460537967500, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460537967598, "dur":6751075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460544718772, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460544718976, "dur":302820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460545021891, "dur":223, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460545022130, "dur":2057861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460547080094, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460547080231, "dur":418692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460547499000, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1696460547499145, "dur":6110661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1696460553609922, "dur":8587171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":14, "ts":1696460562197237, "dur":3266169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":14, "ts":1696460565463460, "dur":79912, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460503708898, "dur":3693, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460503712592, "dur":3584, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460503716205, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460503769151, "dur":1980910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/app.info" }}
-,{ "pid":12345, "tid":15, "ts":1696460505750067, "dur":5836, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":15, "ts":1696460505750065, "dur":5840, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":15, "ts":1696460505755907, "dur":492121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460506505766, "dur":269136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":15, "ts":1696460506774978, "dur":29355, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460509116265, "dur":25511457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460534627897, "dur":2760575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460537388618, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460537388688, "dur":7371056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460544759942, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460544760021, "dur":1223777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460545983885, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460545984042, "dur":1302789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460547286908, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460547287012, "dur":540384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460547827474, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1696460547827628, "dur":10200335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1696460558028167, "dur":6699001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":15, "ts":1696460564727273, "dur":816196, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460503708932, "dur":3668, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460503712601, "dur":3573, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460503716512, "dur":198, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503716711, "dur":74, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503716786, "dur":253, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503717040, "dur":408, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503717449, "dur":168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503717618, "dur":107, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503717726, "dur":316, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503718043, "dur":107, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503718151, "dur":115, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503718268, "dur":193, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503718463, "dur":123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503718587, "dur":332, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503718921, "dur":155, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503719077, "dur":92, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503719170, "dur":670, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503719842, "dur":504, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503720347, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503720484, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\System.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503720612, "dur":171, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\netstandard.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503720785, "dur":272, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Mono.Security.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503721059, "dur":284, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503721345, "dur":173, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Configuration.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503721520, "dur":1150, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Core.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503722672, "dur":151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503722824, "dur":1410, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503724235, "dur":534, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Drawing.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503724770, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503724896, "dur":131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503725028, "dur":173, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503725202, "dur":250, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Net.Http.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503725453, "dur":221, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Numerics.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503725675, "dur":537, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503726213, "dur":290, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Security.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503726504, "dur":245, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503726750, "dur":133, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Transactions.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503726884, "dur":186, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503727071, "dur":2042, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503729115, "dur":1728, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503730844, "dur":2892, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\mscorlib.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460503733737, "dur":137, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneLinux64.json" }}
-,{ "pid":12345, "tid":16, "ts":1696460503716183, "dur":17736, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/LinuxPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":16, "ts":1696460503736253, "dur":31029211, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":16, "ts":1696460534769338, "dur":687569, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460536932037, "dur":975231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Plugins/lib_burst_generated.so" }}
-,{ "pid":12345, "tid":16, "ts":1696460537907311, "dur":2992730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460540900151, "dur":5167350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460546067633, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460546067802, "dur":1219025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460547286924, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460547287039, "dur":540311, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460547827474, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1696460547827658, "dur":12330415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1696460560158233, "dur":5123061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"E:/jeopardybuild_linux/hackerJeopardy_Data/level3" }}
-,{ "pid":12345, "tid":16, "ts":1696460565281382, "dur":262035, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1696460565556736, "dur":1423, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1705956676825545, "dur":18722, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956676844275, "dur":299, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956676844615, "dur":449, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956676845158, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/level0" }}
+,{ "pid":12345, "tid":0, "ts":1705956676847858, "dur":2527, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":0, "ts":1705956676845088, "dur":5768, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956676850858, "dur":3581122, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956680431982, "dur":543, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956680432723, "dur":10217, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1705956676845296, "dur":5569, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705956676850869, "dur":3581, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705956676856939, "dur":713, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_16d3.info" }}
+,{ "pid":12345, "tid":1, "ts":1705956676857660, "dur":151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Linux64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1705956676857821, "dur":117, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Linux64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1705956676857939, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Linux64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1705956676858206, "dur":366, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676858574, "dur":148, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676858734, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\System.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676858857, "dur":170, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676859028, "dur":279, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676859308, "dur":315, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676859624, "dur":184, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676859810, "dur":992, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676860804, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676860925, "dur":1749, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676862676, "dur":487, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676863165, "dur":147, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676863314, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676863442, "dur":321, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676863765, "dur":346, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676864113, "dur":195, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676864310, "dur":933, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676865245, "dur":283, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676865530, "dur":203, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676865735, "dur":100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676865836, "dur":166, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676866003, "dur":2735, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676868740, "dur":2723, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676871465, "dur":4982, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705956676876449, "dur":115, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playerbb74aa3d-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1705956676857658, "dur":19014, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/LinuxPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1705956676877404, "dur":128934, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1705956677014581, "dur":5324, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\LinuxPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1705956677014579, "dur":5332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1705956677019940, "dur":1210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1705956677021155, "dur":3410822, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705956676845453, "dur":5467, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705956676850924, "dur":1634, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705956676852558, "dur":1928, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705956676854487, "dur":218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1705956676865892, "dur":1161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1705956676867109, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1705956676867678, "dur":3130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1705956676871008, "dur":1895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676872973, "dur":8609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676881680, "dur":7395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676889143, "dur":4604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676893847, "dur":4418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676898357, "dur":4887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676903326, "dur":5291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676908686, "dur":4379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676913170, "dur":4580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676917808, "dur":6043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705956676923921, "dur":3166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1705956676927136, "dur":3504863, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705956676845406, "dur":5496, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705956676850907, "dur":1581, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705956676852489, "dur":1995, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705956676854488, "dur":218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1705956676857255, "dur":1849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1705956676859176, "dur":8346, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1705956676859174, "dur":8349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1705956676867543, "dur":1435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1705956676869034, "dur":3938, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676869033, "dur":3941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676872987, "dur":11085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676884208, "dur":5825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676890125, "dur":4990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676895202, "dur":5238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676900512, "dur":4940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676905517, "dur":4716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676910301, "dur":4739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676915115, "dur":4636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705956676919883, "dur":1637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1705956676921581, "dur":3146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1705956676924919, "dur":3507051, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705956676845360, "dur":5521, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705956676850885, "dur":1371, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705956676852256, "dur":2209, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705956676854466, "dur":218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1705956676892269, "dur":2518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1705956676894864, "dur":4442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705956676899395, "dur":5224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705956676904700, "dur":4992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705956676909847, "dur":4968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705956676914891, "dur":4614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705956676919683, "dur":1639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Resources/UnityPlayer.png" }}
+,{ "pid":12345, "tid":4, "ts":1705956676921377, "dur":2790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705956676924277, "dur":3571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1705956676927925, "dur":3504076, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705956676845342, "dur":5530, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705956676850877, "dur":1517, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705956676852394, "dur":2139, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705956676854534, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1705956676891750, "dur":2458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1705956676894332, "dur":5571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705956676900008, "dur":5029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705956676905118, "dur":4980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705956676910163, "dur":5052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705956676915299, "dur":5035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705956676920403, "dur":1697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1705956676922168, "dur":2662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1705956676924906, "dur":3261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":5, "ts":1705956676928222, "dur":3503801, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705956676845394, "dur":5497, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705956676850895, "dur":1389, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705956676852285, "dur":2184, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705956676854472, "dur":255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1705956676877649, "dur":6563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1705956676884289, "dur":4638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676889003, "dur":3322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676892402, "dur":5228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676897803, "dur":3682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676901577, "dur":5242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676906931, "dur":4813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676911824, "dur":5072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676916969, "dur":5378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705956676922456, "dur":3489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1705956676926005, "dur":3505998, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705956676845442, "dur":5469, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705956676850914, "dur":1650, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705956676852564, "dur":1897, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705956676854465, "dur":204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/x86_64/libmono-native.so" }}
+,{ "pid":12345, "tid":7, "ts":1705956676866881, "dur":3033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/x86_64/libmono-native.so" }}
+,{ "pid":12345, "tid":7, "ts":1705956676870207, "dur":2844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676873134, "dur":10550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676888470, "dur":194, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705956676883766, "dur":4912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676888803, "dur":2994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676891879, "dur":4554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676896551, "dur":5882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676902523, "dur":5056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676907656, "dur":4709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676912455, "dur":5097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676917628, "dur":5537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705956676923228, "dur":4070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1705956676927355, "dur":3504634, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705956676845496, "dur":5436, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705956676850937, "dur":1632, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705956676852569, "dur":1911, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705956676854495, "dur":8850, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1705956676854484, "dur":8862, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1705956676863371, "dur":1722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1705956676865157, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1705956676865375, "dur":1585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1705956676867026, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/config" }}
+,{ "pid":12345, "tid":8, "ts":1705956676867152, "dur":1947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/config" }}
+,{ "pid":12345, "tid":8, "ts":1705956676869166, "dur":2213, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676869165, "dur":2216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676871396, "dur":4667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676876136, "dur":5202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676887140, "dur":348, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705956676881424, "dur":6089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676887924, "dur":4225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676892235, "dur":4262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676896598, "dur":5443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676902159, "dur":5146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676907389, "dur":5927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676913378, "dur":5052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676918504, "dur":5354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705956676923928, "dur":3330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1705956676927309, "dur":3504699, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1705956676845534, "dur":5414, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1705956676850953, "dur":1596, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1705956676852549, "dur":1939, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1705956676854498, "dur":8482, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":9, "ts":1705956676854489, "dur":8492, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1705956676863001, "dur":1390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1705956676864445, "dur":8775, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1705956676864443, "dur":8778, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1705956676873240, "dur":3159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1705956676876498, "dur":6985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676883585, "dur":4174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676887835, "dur":4087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676892013, "dur":4198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676896280, "dur":3612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676900001, "dur":4347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676904447, "dur":5423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676909977, "dur":5407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676915460, "dur":5555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1705956676921082, "dur":1717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":9, "ts":1705956676922881, "dur":3563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1705956676926504, "dur":3505479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1705956676845576, "dur":5385, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1705956676850966, "dur":435, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1705956676851402, "dur":3060, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1705956676854480, "dur":30168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":10, "ts":1705956676854463, "dur":30187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":10, "ts":1705956676888650, "dur":73, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1705956676885374, "dur":3398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":10, "ts":1705956676888938, "dur":4956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676898428, "dur":78, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1705956676894000, "dur":4515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676898655, "dur":5497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676904255, "dur":4751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676909078, "dur":5201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676914345, "dur":4636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676919070, "dur":5305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1705956676924497, "dur":4247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1705956676928791, "dur":3503213, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1705956676845621, "dur":5350, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1705956676850972, "dur":3485, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1705956676854461, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so" }}
+,{ "pid":12345, "tid":11, "ts":1705956676890713, "dur":6629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so" }}
+,{ "pid":12345, "tid":11, "ts":1705956676897426, "dur":4332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1705956676901830, "dur":4888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1705956676906828, "dur":4702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1705956676911616, "dur":5233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1705956676916923, "dur":4727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1705956676921721, "dur":3608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1705956676925397, "dur":3506599, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1705956676845650, "dur":5331, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1705956676850982, "dur":3473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1705956676854461, "dur":240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so" }}
+,{ "pid":12345, "tid":12, "ts":1705956676856281, "dur":2853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so" }}
+,{ "pid":12345, "tid":12, "ts":1705956676859188, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1705956676859797, "dur":1298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1705956676861160, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1705956676861592, "dur":1338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1705956676862993, "dur":8518, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":12, "ts":1705956676862992, "dur":8522, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1705956676871538, "dur":1155, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1705956676872763, "dur":7083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676879949, "dur":3930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676884061, "dur":6516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676890655, "dur":3386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676894115, "dur":4220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676898400, "dur":4380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676902853, "dur":5789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676908736, "dur":5023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676913833, "dur":4768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676918673, "dur":5212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1705956676923953, "dur":3664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/level1" }}
+,{ "pid":12345, "tid":12, "ts":1705956676927672, "dur":3504326, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1705956676845685, "dur":5306, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1705956676850991, "dur":3462, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1705956676854464, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1705956676866374, "dur":1775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/app.info" }}
+,{ "pid":12345, "tid":13, "ts":1705956676868150, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/UnityPlayer.so" }}
+,{ "pid":12345, "tid":13, "ts":1705956676868324, "dur":28771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/UnityPlayer.so" }}
+,{ "pid":12345, "tid":13, "ts":1705956676897199, "dur":4013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1705956676901292, "dur":4908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1705956676906276, "dur":5042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1705956676911409, "dur":5146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1705956676916645, "dur":6024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1705956676922748, "dur":1982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":13, "ts":1705956676924814, "dur":3361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":13, "ts":1705956676928244, "dur":3503768, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1705956676845721, "dur":5279, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1705956676851000, "dur":3452, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1705956676854734, "dur":243, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676854978, "dur":149, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676855128, "dur":267, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676855396, "dur":434, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676855832, "dur":130, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676855963, "dur":111, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676856076, "dur":350, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676856427, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676856543, "dur":130, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676856675, "dur":236, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676856912, "dur":167, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676857081, "dur":285, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676857367, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676857528, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676857638, "dur":524, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676858164, "dur":417, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676858583, "dur":134, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676858734, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\System.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676858854, "dur":174, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676859030, "dur":273, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676859304, "dur":316, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676859621, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676859814, "dur":1003, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676860819, "dur":137, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676860958, "dur":1718, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Data.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676862678, "dur":498, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676863177, "dur":138, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676863320, "dur":123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676863444, "dur":186, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676863632, "dur":316, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676863950, "dur":187, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676864139, "dur":964, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676865104, "dur":313, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676865418, "dur":250, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676865669, "dur":123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676865793, "dur":200, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676865994, "dur":2732, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.Xml.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676868727, "dur":3349, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\System.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676872141, "dur":4065, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-linux\\mscorlib.dll" }}
+,{ "pid":12345, "tid":14, "ts":1705956676876209, "dur":149, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"ProjectSettings\\BurstAotSettings_StandaloneLinux64.json" }}
+,{ "pid":12345, "tid":14, "ts":1705956676876359, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\temp\\projecten\\hackerJeopardy\\hackerjeopardy\\hackerJeopardy\\Library\\PackageCache\\com.unity.burst@1.8.7\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":14, "ts":1705956676854460, "dur":22009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/LinuxPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":14, "ts":1705956676876895, "dur":50, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1705956676878567, "dur":3547984, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/LinuxPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":14, "ts":1705956680430966, "dur":965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Plugins/lib_burst_generated.so" }}
+,{ "pid":12345, "tid":15, "ts":1705956676845757, "dur":5249, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1705956676851007, "dur":3466, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1705956676854475, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":15, "ts":1705956676891227, "dur":1945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":15, "ts":1705956676893274, "dur":3423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":15, "ts":1705956676896844, "dur":4170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1705956676901093, "dur":5087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1705956676906264, "dur":4967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1705956676911333, "dur":4856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1705956676916274, "dur":5030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1705956676921393, "dur":3622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1705956676925066, "dur":3506905, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1705956676845797, "dur":5218, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1705956676851015, "dur":3456, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1705956676854501, "dur":8441, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\LinuxStandaloneSupport\\Variations\\linux64_player_nondevelopment_mono\\Data\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":16, "ts":1705956676854482, "dur":8462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1705956676863045, "dur":1099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1705956676864197, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1705956676864529, "dur":1379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1705956676865951, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1705956676866247, "dur":1613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":16, "ts":1705956676867916, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/kefcom/Desktop/bLin/Jeopardy.x86_64" }}
+,{ "pid":12345, "tid":16, "ts":1705956676868038, "dur":1819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy.x86_64" }}
+,{ "pid":12345, "tid":16, "ts":1705956676870225, "dur":2493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676872801, "dur":7062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676887145, "dur":340, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1705956676879962, "dur":7547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676887647, "dur":3378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676891101, "dur":3197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676894373, "dur":4811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676899255, "dur":4610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676903937, "dur":4355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676908369, "dur":4364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676912820, "dur":4554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676917441, "dur":4541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1705956676922082, "dur":3859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/kefcom/Desktop/bLin/Jeopardy_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":16, "ts":1705956676925993, "dur":3505980, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705956680446021, "dur":1410, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

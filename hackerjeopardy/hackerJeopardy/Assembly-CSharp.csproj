@@ -118,8 +118,10 @@
     <Compile Include="Assets\scripts\buttons\btn_catRemove.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\scripts\keylistener_questions.cs" />
+    <Compile Include="Assets\scripts\buttons\btn_goAudience.cs" />
     <Compile Include="Assets\scripts\buttons\btn_exitOperator.cs" />
     <Compile Include="Assets\scripts\buttons\btn_teamSelector.cs" />
+    <Compile Include="Assets\scripts\buttons\btn_audAnswerCorrect.cs" />
     <Compile Include="Assets\scripts\buttons\btn_plAnswerWrong.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\scripts\questionLoader.cs" />
@@ -128,6 +130,7 @@
     <Compile Include="Assets\scripts\buttons\btn_qNew.cs" />
     <Compile Include="Assets\scripts\buttons\btn_addPlayer2.cs" />
     <Compile Include="Assets\scripts\buttons\btn_toMenu.cs" />
+    <Compile Include="Assets\scripts\buttons\btn_audAnswerWrong.cs" />
     <Compile Include="Assets\scripts\buttons\btn_backFromTS.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\scripts\buttons\btn_revealAnswer.cs" />
@@ -138,6 +141,7 @@
     <Compile Include="Assets\scripts\testScript.cs" />
     <Compile Include="Assets\scripts\buttons\qBoxScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\scripts\buttons\btn_audNoAnswer.cs" />
     <Compile Include="Assets\scripts\buttons\btn_createQuestionFile.cs" />
     <Compile Include="Assets\scripts\buttons\catBoxScript.cs" />
     <Compile Include="Assets\scripts\buttons\btn_newQuestionsFile1.cs" />

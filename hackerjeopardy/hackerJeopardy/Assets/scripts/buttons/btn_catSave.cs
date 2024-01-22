@@ -59,6 +59,7 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                     lastIndex = GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().value;
                     //update cat name and color boxes
                     GameObject.Find("inp_catName").GetComponent<TMP_InputField>().text = GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList[lastIndex].categoryName;
+                    GameObject.Find("inp_catHint").GetComponent<TMP_InputField>().text = GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList[lastIndex].categoryHint;
                     GameObject.Find("inp_catColorR").GetComponent<TMP_InputField>().text = GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList[lastIndex].categoryColorR.ToString();
                     GameObject.Find("inp_catColorG").GetComponent<TMP_InputField>().text = GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList[lastIndex].categoryColorG.ToString();
                     GameObject.Find("inp_catColorB").GetComponent<TMP_InputField>().text = GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList[lastIndex].categoryColorB.ToString();
@@ -137,6 +138,7 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                                 // insert cat!
                                 Category thisCat = new Category();
                                 thisCat.categoryName = GameObject.Find("inp_catName").GetComponent<TMP_InputField>().text;
+                                thisCat.categoryHint = GameObject.Find("inp_catHint").GetComponent<TMP_InputField>().text;
                                 thisCat.categoryColorR = int.Parse(GameObject.Find("inp_catColorR").GetComponent<TMP_InputField>().text);
                                 thisCat.categoryColorG = int.Parse(GameObject.Find("inp_catColorG").GetComponent<TMP_InputField>().text);
                                 thisCat.categoryColorB = int.Parse(GameObject.Find("inp_catColorB").GetComponent<TMP_InputField>().text);
@@ -147,6 +149,7 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
                                 //clear fields and update dropdown
                                 GameObject.Find("inp_catName").GetComponent<TMP_InputField>().text = "";
+                                GameObject.Find("inp_catHint").GetComponent<TMP_InputField>().text = "";
                                 GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().updateCdrp();
                             }
                             else
@@ -217,6 +220,7 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
                                 //clear fields and update dropdown
                                 GameObject.Find("inp_catName").GetComponent<TMP_InputField>().text = "";
+                                GameObject.Find("inp_catHint").GetComponent<TMP_InputField>().text = "";
                                 GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().updateCdrp();
                             }
                             else

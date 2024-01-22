@@ -235,6 +235,7 @@ public class gameSettings : MonoBehaviour
         }
         if(TeamsList.Count > 0)
         {
+            GameObject.Find("scriptHolder").GetComponent<soundScript>().stopMusic();
             SceneManager.LoadScene("teamSelector");
         }
     }
@@ -247,6 +248,7 @@ public class Category
     public int categoryColorR;
     public int categoryColorG;
     public int categoryColorB;
+    public string categoryHint;
     public List<Question> questions;
 }
 
