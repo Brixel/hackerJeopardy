@@ -1,4 +1,3 @@
-Important message: The linux build is untested but could work.
 
 # Hacker jeopardy
 ## _A visual presentation for Jeopardy style quiz games._
@@ -116,24 +115,6 @@ Flash the ESP32 S2 mini with the code found in the folder hardware/firmware/clie
 
 # creating a host receiver
 For the host we use another ESP32 S2 mini, flash it with the code found in folder hardware/firmware/host and connect it to the system with a USB cable when in use.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
