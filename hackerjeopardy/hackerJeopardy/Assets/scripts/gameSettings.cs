@@ -223,6 +223,56 @@ public class gameSettings : MonoBehaviour
         tagLine = allText[1];
         string toDeserialize = allText[2];
         categoryList = JsonConvert.DeserializeObject<List<Category>>(toDeserialize);
+
+        bool lostFiles = false;
+        string mediaDrive = "";
+        //check if media files are present
+        foreach(Category cat in categoryList)
+        {
+            foreach(Question q in cat.questions)
+            {
+                //if(q.PresentationType == 1 || q.PresentationType == 2)
+                if (q.questionVideo != "" && q.questionVideo != null && q.questionVideo != "null")
+                {
+                    if (File.Exists(q.questionVideo) == false)
+                    {
+                        lostFiles = true;
+                        mediaDrive = q.questionVideo.Substring(0, 3);
+                    }
+                }
+                if (q.questionImage != "" && q.questionImage != null && q.questionImage != "null")
+                {
+                    if (File.Exists(q.questionImage) == false)
+                    {
+                        lostFiles = true;
+                        mediaDrive = q.questionImage.Substring(0, 3);
+                    }
+                }
+                if (q.answerVideo != "" && q.answerVideo != null && q.answerVideo != "null")
+                {
+                    if (File.Exists(q.answerVideo) == false)
+                    {
+                        lostFiles = true;
+                        mediaDrive = q.answerVideo.Substring(0, 3);
+                    }
+                }
+                if (q.answerImage != "" && q.answerImage != null && q.answerImage != "null")
+                {
+                    if (File.Exists(q.answerImage) == false)
+                    {
+                        lostFiles = true;
+                        mediaDrive = q.answerImage.Substring(0, 3);
+                    }
+                }               
+            }
+        }
+
+        if(lostFiles == true)
+        {
+            //show error window:
+            GameObject.Find("imp_lostMediaDrive").GetComponent<TMP_InputField>().text = mediaDrive;
+            GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().showLostMediaWindow();
+        }
     }
 
     public void loadTeams(string theFile)

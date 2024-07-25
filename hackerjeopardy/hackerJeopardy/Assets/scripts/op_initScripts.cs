@@ -237,6 +237,15 @@ public class op_initScripts : MonoBehaviour
         GameObject.Find("btn_importTeam").GetComponent<btn_importTeam>().setInActive();
     }
 
+    public void hideLostMediaWindow()
+    {
+        //hide window
+        GameObject.Find("window_lostMedia").transform.position = new Vector3(GameObject.Find("window_lostMedia").transform.position.x, 1112, 0);
+
+        //no more open windows
+        windowState = 0;
+    }
+
     public void renderPlayers()
     {
         //remove players (if needed)
@@ -493,6 +502,35 @@ public class op_initScripts : MonoBehaviour
 
         }
     }
+
+    public void showLostMediaWindow()
+    {
+        if (windowState == 0) // check if other windows are open
+        {
+            //show import window
+            GameObject.Find("window_lostMedia").transform.position = new Vector3(GameObject.Find("window_lostMedia").transform.position.x, 0, 0);
+
+            //clear dropdown box
+            GameObject.Find("drp_lostMediaReplacementDrive").GetComponent<TMP_Dropdown>().options.Clear();
+
+            //populate dropdown box
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            int foundDrives = 0;
+            foreach (DriveInfo thisDrive in allDrives)
+            {
+                if (thisDrive.DriveType == DriveType.Removable)
+                {
+                    foundDrives++;
+                    TMP_Dropdown.OptionData thisOption = new TMP_Dropdown.OptionData();
+                    thisOption.text = thisDrive.Name;
+                    GameObject.Find("drp_lostMediaReplacementDrive").GetComponent<TMP_Dropdown>().options.Add(thisOption);
+                }
+            }
+
+            GameObject.Find("drp_lostMediaReplacementDrive").GetComponent<TMP_Dropdown>().RefreshShownValue();
+        }
+    }
+
 
     public void hideImportWindow()
     {
