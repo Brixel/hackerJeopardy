@@ -401,6 +401,8 @@
 "Assets/scripts/buttons/btn_plAnswerCorrect.cs"
 "Assets/scripts/buttons/btn_plAnswerWrong.cs"
 "Assets/scripts/buttons/btn_PlayMedia.cs"
+"Assets/scripts/buttons/btn_plScoreMinus.cs"
+"Assets/scripts/buttons/btn_plScorePlus.cs"
 "Assets/scripts/buttons/btn_qNew.cs"
 "Assets/scripts/buttons/btn_qRemove.cs"
 "Assets/scripts/buttons/btn_qSave.cs"

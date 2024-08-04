@@ -79,6 +79,8 @@ public class op_boardScript : MonoBehaviour
             GameObject thisPLObj = Instantiate(playerPrefab, GameObject.Find("pnl_playerHolder").transform);
             thisPLObj.transform.Find("txt_playerName").GetComponent<TextMeshProUGUI>().text = PLlist[i].playerName;
             thisPLObj.transform.Find("txt_playerScore").GetComponent<TextMeshProUGUI>().text = PLlist[i].playerScore.ToString();
+            thisPLObj.transform.Find("pnl_scoreMinus").GetComponent<btn_plScoreMinus>().plIndex = i;
+            thisPLObj.transform.Find("pnl_scorePlus").GetComponent<btn_plScorePlus>().plIndex = i;
         }
     }
 

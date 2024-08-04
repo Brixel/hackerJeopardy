@@ -3783,7 +3783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catBoxPrefab: {fileID: 4359663294912001268, guid: ed21b5de87c3bf0409a66d469900addc, type: 3}
   qBoxPrefab: {fileID: 4011226188484415976, guid: 0dec57299fc18874ea59bffa5066d6ba, type: 3}
-  playerPrefab: {fileID: 1092539765087062786, guid: 473c90c112cad18468355378fc2d0633, type: 3}
+  playerPrefab: {fileID: 3843889406199270243, guid: 9d9dc64247beb2d41aa73bf1bf526d9e, type: 3}
 --- !u!1 &995605080
 GameObject:
   m_ObjectHideFlags: 0
