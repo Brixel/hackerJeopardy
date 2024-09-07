@@ -102,13 +102,13 @@ At this point you can return to the board, if a player had the right answer, he 
  - 1 resistor (~10K Ohm) 
  
  ## Wiring
-9V + to Buck converter IN +
-9V - to Buck convertor IN -
-Buck convertor OUT + to ESP32 VBUS
-Buck convertor OUT - TO ESP32 GND
-Button to ESP 14
-Resistor between ESP14 and ESP 3.3v
-Button to ESP GND
+ - 9V + to Buck converter IN +
+ - 9V - to Buck convertor IN -
+ - Buck convertor OUT + to ESP32 VBUS
+ - Buck convertor OUT - TO ESP32 GND
+ - Button to ESP 14
+ - Resistor between ESP14 and ESP 3.3v
+ - Button to ESP GND
 
 ## The software
 Flash the ESP32 S2 mini with the code found in the folder hardware/firmware/client, but before you do change the player index in the code (variable currentPlayer). 0-9 Player1 should be 0, player2 should be 1 etc... 
