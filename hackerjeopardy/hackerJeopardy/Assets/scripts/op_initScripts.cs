@@ -10,7 +10,10 @@ using System.Linq;
 public class op_initScripts : MonoBehaviour
 {
     public GameObject playerPrefab;
+    public GameObject buttonTestCircle;
+
     public int windowState;
+    bool testWindowOpen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -172,6 +175,63 @@ public class op_initScripts : MonoBehaviour
             //clear errors
             GameObject.Find("txt_playerNameError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 0);
             GameObject.Find("txt_playerLimitError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 0);
+        }
+    }
+
+    public void testButtons()
+    {
+        if (windowState == 0) // check if other windows are open
+        {
+            if(testWindowOpen == false)
+            {
+                //set buttons to each player
+
+                // prefab = buttonTestCircle
+                int colCount = 0;
+                int rowCount = 0;
+                Transform targetTrans = GameObject.Find("window_btnTest").transform.Find("pnl_overlay").transform.Find("pnl_window").transform;
+                if(targetTrans.childCount > 0)
+                {
+                    foreach (Transform childobj in targetTrans.transform)
+                    {
+                        childobj.GetComponent<btnTestScript>().goAway();
+                    }
+                }
+
+                //add circles
+                int players = 1;
+                foreach (Player plyr in GameObject.Find("scriptHolder").GetComponent<gameSettings>().players)
+                {
+                    GameObject thisCircle = Instantiate(buttonTestCircle, targetTrans);
+                    thisCircle.transform.position = new Vector3((thisCircle.transform.position.x + (colCount + (0.2f * colCount))), (thisCircle.transform.position.y - (rowCount + (0.5f * rowCount))), thisCircle.transform.position.z);
+                    thisCircle.GetComponent<btnTestScript>().playerNumber = players;
+                    thisCircle.transform.Find("txtPlayerNumber").GetComponent<TextMeshProUGUI>().text = plyr.playerName;
+                    players++;
+                    colCount++;
+                    if(colCount > 4)
+                    {
+                        rowCount++;
+                        colCount = 0;
+                    }
+                }
+
+
+
+                //show button test window
+                GameObject.Find("window_btnTest").transform.position = new Vector3(GameObject.Find("window_btnTest").transform.position.x, -10.96f, 0);
+                //clear errors
+                GameObject.Find("txt_playerNameError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 0);
+                GameObject.Find("txt_playerLimitError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 0);
+                testWindowOpen = true;
+            }
+            else
+            {
+                //show button test window
+                GameObject.Find("window_btnTest").transform.position = new Vector3(GameObject.Find("window_btnTest").transform.position.x, 0, 0);
+                testWindowOpen = false;
+                windowState = 0;
+            }
+            
         }
     }
 

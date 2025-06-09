@@ -127,6 +127,7 @@
     <Compile Include="Assets\scripts\buttons\btn_audAnswerCorrect.cs" />
     <Compile Include="Assets\scripts\buttons\btn_plAnswerWrong.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+    <Compile Include="Assets\scripts\btnTestScript.cs" />
     <Compile Include="Assets\scripts\questionLoader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="Assets\scripts\buttons\btn_audNoAnswer.cs" />
     <Compile Include="Assets\scripts\buttons\btn_createQuestionFile.cs" />
     <Compile Include="Assets\scripts\buttons\catBoxScript.cs" />
+    <Compile Include="Assets\scripts\buttons\btn_testBtns.cs" />
     <Compile Include="Assets\scripts\buttons\btn_newQuestionsFile1.cs" />
     <Compile Include="Assets\scripts\buttons\btn_plScoreMinus.cs" />
     <Compile Include="Assets\scripts\buttons\btn_startGame.cs" />
