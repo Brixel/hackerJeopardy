@@ -61,13 +61,16 @@ python3 main.py
 ### File Operations
 
 - **New**: File → New (creates blank quiz)
-- **Open**: File → Open (loads existing JSON file)
+- **Open**: File → Open (loads existing JSON or .jeopardy file)
 - **Save**: File → Save (saves to current file)
 - **Save As**: File → Save As (saves to new file)
+- **Export as .jeopardy**: File → Export as .jeopardy (exports Unity-compatible format)
 
-## JSON Format
+## File Formats
 
-The editor creates JSON files compatible with the Hacker Jeopardy Unity game. The format includes:
+### JSON Format (.json)
+
+The editor's native format creates JSON files compatible with the Hacker Jeopardy Unity game. The format includes:
 
 ```json
 {
@@ -77,6 +80,7 @@ The editor creates JSON files compatible with the Hacker Jeopardy Unity game. Th
     {
       "name": "Category Name",
       "color": {"r": 1.0, "g": 0.0, "b": 0.0, "a": 1.0},
+      "hint": "Category hint text",
       "questions": [
         {
           "value": 100,
@@ -93,6 +97,28 @@ The editor creates JSON files compatible with the Hacker Jeopardy Unity game. Th
   ]
 }
 ```
+
+### Unity .jeopardy Format (.jeopardy)
+
+The editor also supports Unity's native .jeopardy format for seamless integration with the Unity game. This format uses a 3-line structure:
+
+```
+Game Name
+Tagline
+[{"categoryName":"Category","categoryColorR":255,"categoryColorG":0,"categoryColorB":0,"categoryHint":"Hint","questions":[...]}]
+```
+
+**Key differences from JSON format:**
+- Line 1: Game name (plain text)
+- Line 2: Tagline (plain text) 
+- Line 3+: JSON array of categories with Unity-specific field names
+- Colors are RGB integers (0-255) instead of floats (0-1)
+- Field names use Unity conventions (`categoryName` vs `name`, etc.)
+
+**Workflow Support:**
+- **Import**: Open .jeopardy files created in Unity for editing
+- **Export**: Save editor projects as .jeopardy files for Unity
+- **Round-trip**: Full data integrity between editor and Unity formats
 
 ## Tips
 

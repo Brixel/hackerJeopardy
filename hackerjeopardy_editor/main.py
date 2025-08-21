@@ -26,6 +26,8 @@ class JeopardyEditor:
         file_menu.add_command(label="Save", command=self.save_quiz)
         file_menu.add_command(label="Save As", command=self.save_quiz_as)
         file_menu.add_separator()
+        file_menu.add_command(label="Export as .jeopardy", command=self.export_jeopardy)
+        file_menu.add_separator()
         file_menu.add_command(label="Exit", command=self.root.quit)
         
         # Main layout - 3 panes
@@ -112,6 +114,13 @@ class JeopardyEditor:
         self.cat_color_canvas = tk.Canvas(color_frame, width=50, height=25, bg="blue")
         self.cat_color_canvas.pack(side=tk.LEFT, padx=(0, 5))
         ttk.Button(color_frame, text="Choose Color", command=self.choose_category_color).pack(side=tk.LEFT)
+        
+        # Category hint
+        ttk.Label(self.cat_edit_frame, text="Hint:").grid(row=2, column=0, sticky="w", padx=5, pady=5)
+        self.cat_hint_var = tk.StringVar()
+        self.cat_hint_entry = ttk.Entry(self.cat_edit_frame, textvariable=self.cat_hint_var, width=30)
+        self.cat_hint_entry.grid(row=2, column=1, sticky="ew", padx=5, pady=5)
+        self.cat_hint_var.trace('w', self.on_category_changed)
         
         self.cat_edit_frame.columnconfigure(1, weight=1)
     
@@ -201,11 +210,14 @@ class JeopardyEditor:
     def open_quiz(self):
         filepath = filedialog.askopenfilename(
             title="Open Quiz File",
-            filetypes=[("JSON files", "*.json"), ("All files", "*.*")]
+            filetypes=[("JSON files", "*.json"), ("Jeopardy files", "*.jeopardy"), ("All files", "*.*")]
         )
         if filepath:
             try:
-                self.quiz = Quiz.load_from_file(filepath)
+                if filepath.lower().endswith('.jeopardy'):
+                    self.quiz = Quiz.load_from_jeopardy_file(filepath)
+                else:
+                    self.quiz = Quiz.load_from_file(filepath)
                 self.current_file = filepath
                 self.current_category = None
                 self.current_question = None
@@ -237,6 +249,19 @@ class JeopardyEditor:
                 messagebox.showinfo("Success", "Quiz saved successfully!")
             except Exception as e:
                 messagebox.showerror("Error", f"Failed to save quiz: {str(e)}")
+    
+    def export_jeopardy(self):
+        filepath = filedialog.asksaveasfilename(
+            title="Export as .jeopardy",
+            defaultextension=".jeopardy",
+            filetypes=[("Jeopardy files", "*.jeopardy"), ("All files", "*.*")]
+        )
+        if filepath:
+            try:
+                self.quiz.save_to_jeopardy_file(filepath)
+                messagebox.showinfo("Success", "Quiz exported as .jeopardy successfully!")
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to export quiz: {str(e)}")
     
     # Category operations
     def add_category(self):
@@ -275,6 +300,7 @@ class JeopardyEditor:
     def on_category_changed(self, *args):
         if self.current_category:
             self.current_category.name = self.cat_name_var.get()
+            self.current_category.hint = self.cat_hint_var.get()
             self.create_matrix()  # Refresh matrix to show new category name
     
     def on_question_changed(self, *args):
@@ -495,9 +521,11 @@ class JeopardyEditor:
     def refresh_category_editor(self):
         if self.current_category:
             self.cat_name_var.set(self.current_category.name)
+            self.cat_hint_var.set(self.current_category.hint)
             self.cat_color_canvas.config(bg=self.current_category.color.to_hex())
         else:
             self.cat_name_var.set("")
+            self.cat_hint_var.set("")
             self.cat_color_canvas.config(bg="white")
     
     def refresh_question_editor(self):

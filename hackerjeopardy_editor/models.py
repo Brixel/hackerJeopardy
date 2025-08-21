@@ -56,6 +56,7 @@ class Category:
     name: str = "New Category"
     color: Color = None
     questions: List[Question] = None
+    hint: str = ""
     
     def __post_init__(self):
         if self.color is None:
@@ -127,3 +128,126 @@ class Quiz:
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
         return cls.from_dict(data)
+    
+    def to_jeopardy_format(self):
+        """Convert to Unity .jeopardy format"""
+        categories_data = []
+        
+        for category in self.categories:
+            # Convert category to Unity format
+            cat_data = {
+                "categoryName": category.name,
+                "categoryColorR": int(category.color.r * 255),
+                "categoryColorG": int(category.color.g * 255), 
+                "categoryColorB": int(category.color.b * 255),
+                "categoryHint": category.hint,
+                "questions": []
+            }
+            
+            # Convert questions to Unity format
+            for question in category.questions:
+                q_data = {
+                    "value": question.value,
+                    "questionColorR": int(question.questionColor.r * 255),
+                    "questionColorG": int(question.questionColor.g * 255),
+                    "questionColorB": int(question.questionColor.b * 255),
+                    "PresentationType": 0 if question.type == "text" else 1,  # 0=text, 1=media
+                    "questionText": question.question,
+                    "questionImage": question.questionMediaPath,
+                    "questionVideo": None,  # Unity format has separate image/video fields
+                    "answerImage": question.answerMediaPath,
+                    "answerVideo": None,
+                    "answer": question.answer,
+                    "isAvailable": True,
+                    "questionNote": question.note or ""
+                }
+                cat_data["questions"].append(q_data)
+            
+            categories_data.append(cat_data)
+        
+        return categories_data
+    
+    def save_to_jeopardy_file(self, filepath):
+        """Save quiz to Unity .jeopardy file format"""
+        categories_data = self.to_jeopardy_format()
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            # Line 1: Game name
+            f.write(self.gameName + '\n')
+            # Line 2: Tagline
+            f.write(self.tagline + ' \n')
+            # Line 3+: Categories JSON array
+            json.dump(categories_data, f, separators=(',', ':'), ensure_ascii=False)
+    
+    @classmethod
+    def from_jeopardy_format(cls, game_name, tagline, categories_data):
+        """Create Quiz from Unity .jeopardy format data"""
+        categories = []
+        
+        for cat_data in categories_data:
+            # Convert Unity category format to internal format
+            color = Color(
+                r=cat_data.get("categoryColorR", 0) / 255.0,
+                g=cat_data.get("categoryColorG", 0) / 255.0,
+                b=cat_data.get("categoryColorB", 255) / 255.0,
+                a=1.0
+            )
+            
+            questions = []
+            for q_data in cat_data.get("questions", []):
+                # Convert Unity question format to internal format
+                question_color = Color(
+                    r=q_data.get("questionColorR", 0) / 255.0,
+                    g=q_data.get("questionColorG", 0) / 255.0,
+                    b=q_data.get("questionColorB", 255) / 255.0,
+                    a=1.0
+                )
+                
+                # Determine media path (Unity has separate image/video fields)
+                question_media = q_data.get("questionImage") or q_data.get("questionVideo")
+                answer_media = q_data.get("answerImage") or q_data.get("answerVideo")
+                
+                question = Question(
+                    value=q_data.get("value", 100),
+                    type="text" if q_data.get("PresentationType", 0) == 0 else "media",
+                    question=q_data.get("questionText", ""),
+                    answer=q_data.get("answer", ""),
+                    questionMediaPath=question_media,
+                    answerMediaPath=answer_media,
+                    note=q_data.get("questionNote", ""),
+                    questionColor=question_color
+                )
+                questions.append(question)
+            
+            category = Category(
+                name=cat_data.get("categoryName", "Unnamed Category"),
+                color=color,
+                questions=questions,
+                hint=cat_data.get("categoryHint", "")
+            )
+            categories.append(category)
+        
+        return cls(
+            gameName=game_name,
+            tagline=tagline,
+            categories=categories
+        )
+    
+    @classmethod
+    def load_from_jeopardy_file(cls, filepath):
+        """Load quiz from Unity .jeopardy file"""
+        with open(filepath, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+        
+        if len(lines) < 3:
+            raise ValueError("Invalid .jeopardy file format: must have at least 3 lines")
+        
+        # Parse the 3-line format
+        game_name = lines[0].strip()
+        tagline = lines[1].strip()
+        categories_json = ''.join(lines[2:]).strip()
+        
+        # Parse categories JSON
+        categories_data = json.loads(categories_json)
+        
+        return cls.from_jeopardy_format(game_name, tagline, categories_data)
