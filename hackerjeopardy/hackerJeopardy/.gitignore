@@ -45,6 +45,7 @@ sysinfo.txt
 
 # Visual Studio Code config
 .vsconfig
+.vscode
 
 # Jetbrains IDEs
 .idea/
