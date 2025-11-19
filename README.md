@@ -13,7 +13,7 @@ This software provides a method of creating, editing and presenting a jeopardy s
 ## Getting started
 ### Obtaining a binary to run:
 - The easiest way to get going is to download the binaries straight from github (binaries_windows.zip or binaries_linux.tar) and unpack them either on disk or on a removable storage device.
-- If you want to create your own build, clone the project and open it with unity3D v.2022.3.4f1 go to file->build settings, configure to your liking and create build.
+- If you want to create your own build, clone the project and open it with unity3D v.2022.3.62f3 go to file->build settings, configure to your liking and create build.
 
 ### Creating a new game
 - Start the game, you will be greeted with a static image on the (secondary) presentation screen and an operator view on the (primary) operator screen.
@@ -21,12 +21,12 @@ This software provides a method of creating, editing and presenting a jeopardy s
 - Press create, this will take us to the question editor (which can also be accessed by pressing the 'edit questions' button)
 - Now it's time to create some categories and questions. First start by creating a new category in the left part of the window by pressing the 'new' button.
 - Give your category a name and a color (standard is blue) and press 'save/add'.
-- Now you can add questions to your category in the right part of the screen. Give your question a: 
-    - value (numeric only). 
+- Now you can add questions to your category in the right part of the screen. Give your question a:
+    - value (numeric only).
     - type (Text/text+image/text+video).
     - A question to ask.
-    - The answer to said question. 
-    - [optional if type is text/image or text/video] a media parth to an image file or video file for the question and/or answer. (This has been tested with .jpg, .jpeg, .png for images, and .mp4 for videos, others might work too). 
+    - The answer to said question.
+    - [optional if type is text/image or text/video] a media parth to an image file or video file for the question and/or answer. (This has been tested with .jpg, .jpeg, .png for images, and .mp4 for videos, others might work too).
     - [optional] A note: This is something the operator sees while presenting the question, use this to add some trivia or jokes to your presentation.
     - A question color (RGB). This is used on the board and as a background for when showing the question.
 - Press 'save/add' on the right side of the screen.
@@ -78,18 +78,18 @@ When a player presses their button, the operator screen shows what player is ans
 At this point you can return to the board, if a player had the right answer, he or she may choose the next question. If not: the player that chose the previous question may choose again.
 
  ## Questions with video
- 
+
  If a question has a video in it the operator is expected to press '(Re)Play media' to start the video. It will not start automatically. The question will only be revealed after pressing 'Open answers'.
- 
+
  ## The end of the game
- 
+
  When the last question is shown and played, returning to the board will show a screen with the winning player. The operator can see all players with their scores sorted to tell who finished in what position. When pressing 'to menu' the game goes back to the init screen where it shows the game name and tagline.
- 
+
  ---
- 
+
  # Creating the buttons:
  The buttons are designed to work wirelessly on a 9v battery. After using the buttons you might want to disconnect the 9v.
- 
+
  ## The box
  In the folder hardware/boxes there is a design called boxdesign.svg. This is to be lasercutted from 3mm thick wood or plastic.
  ## The hardware
@@ -99,8 +99,8 @@ At this point you can return to the board, if a player had the right answer, he 
  - 1 5v buck converter to regulate the power going into the ESP S2 mini
  - 1 9v battery clip
  - 1 9v battery
- - 1 resistor (~10K Ohm) 
- 
+ - 1 resistor (~10K Ohm)
+
  ## Wiring
  - 9V + to Buck converter IN +
  - 9V - to Buck convertor IN -
@@ -111,12 +111,7 @@ At this point you can return to the board, if a player had the right answer, he 
  - Button to ESP GND
 
 ## The software
-Flash the ESP32 S2 mini with the code found in the folder hardware/firmware/client, but before you do change the player index in the code (variable currentPlayer). 0-9 Player1 should be 0, player2 should be 1 etc... 
+Flash the ESP32 S2 mini with the code found in the folder hardware/firmware/client, but before you do change the player index in the code (variable currentPlayer). 0-9 Player1 should be 0, player2 should be 1 etc...
 
 # creating a host receiver
 For the host we use another ESP32 S2 mini, flash it with the code found in folder hardware/firmware/host and connect it to the system with a USB cable when in use.
-
-
-
-
-
