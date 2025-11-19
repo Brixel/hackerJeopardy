@@ -71,6 +71,7 @@ ExportedObj/
 *.obj
 *.unityproj
 *.sln
+*.slnx
 *.suo
 *.user
 *.userosscache
