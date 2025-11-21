@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using System.IO;
 using TMPro;
 using Unity.Mathematics;
-using TMPro.Examples;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler
@@ -23,18 +22,6 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         isActive = false;
         lastIndex = -1;
     }
-
-    public void setActive()
-    {
-        lastIndex = GameObject.Find("drp_questions").GetComponent<TMP_Dropdown>().value;
-        isActive = true;
-    }
-
-    public void setInActive()
-    {
-        isActive = false;
-    }
-
 
     // Update is called once per frame
     void Update()
@@ -89,10 +76,23 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             }
         }
     }
+
+    public void setActive()
+    {
+        lastIndex = GameObject.Find("drp_questions").GetComponent<TMP_Dropdown>().value;
+        isActive = true;
+    }
+
+    public void setInActive()
+    {
+        isActive = false;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         transform.GetComponent<Image>().color = new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a / 2);
     }
+
     public void OnPointerExit(PointerEventData eventData)
     {
         if (isClicked == false)
@@ -100,10 +100,12 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             transform.GetComponent<Image>().color = new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a);
         }
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         clickLogic();
     }
+
     public void OnPointerDown(PointerEventData data)
     {
         clickLogic();
@@ -125,7 +127,7 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 //Is the input valid?
                 //value numeric?
                 int result;
-                if(int.TryParse(GameObject.Find("inp_qVal").GetComponent<TMP_InputField>().text, out result)) 
+                if (int.TryParse(GameObject.Find("inp_qVal").GetComponent<TMP_InputField>().text, out result))
                 {
                     //value is numeric
                     //are the colors sane?
@@ -148,7 +150,7 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                                 thisQ.PresentationType = GameObject.Find("drp_qType").GetComponent<TMP_Dropdown>().value;
                                 thisQ.questionText = GameObject.Find("inp_qTxt").GetComponent<TMP_InputField>().text;
                                 thisQ.answer = GameObject.Find("inp_aTxt").GetComponent<TMP_InputField>().text;
-                                if(thisQ.PresentationType == 1)
+                                if (thisQ.PresentationType == 1)
                                 {
                                     thisQ.questionImage = GameObject.Find("inp_mPath").GetComponent<TMP_InputField>().text;
                                     thisQ.answerImage = GameObject.Find("inp_aMPath").GetComponent<TMP_InputField>().text;
@@ -197,7 +199,6 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                     //show error
                     GameObject.Find("txt_qValError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 255);
                 }
-                
             }
             else
             {
@@ -250,7 +251,6 @@ public class btn_qSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                                 GameObject.Find("inp_qNote").GetComponent<TMP_InputField>().text = "";
                                 GameObject.Find("drp_qType").GetComponent<TMP_Dropdown>().value = 0;
                                 GameObject.Find("operator_init_scripts").GetComponent<op_initScripts>().updateQdrp();
-
                             }
                             else
                             {
