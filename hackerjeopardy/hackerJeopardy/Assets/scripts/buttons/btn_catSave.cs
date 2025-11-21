@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using System.IO;
 using TMPro;
 using Unity.Mathematics;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler
 {
@@ -14,7 +13,6 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     bool isClicked;
     bool isActive;
     public int lastIndex;
-
 
     void Start()
     {
@@ -143,7 +141,6 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                                 thisCat.categoryColorR = int.Parse(GameObject.Find("inp_catColorR").GetComponent<TMP_InputField>().text);
                                 thisCat.categoryColorG = int.Parse(GameObject.Find("inp_catColorG").GetComponent<TMP_InputField>().text);
                                 thisCat.categoryColorB = int.Parse(GameObject.Find("inp_catColorB").GetComponent<TMP_InputField>().text);
-
 
                                 thisCat.questions = new List<Question>();
                                 GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList.Add(thisCat);

@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -20,7 +19,6 @@ public class keylistener_questions : MonoBehaviour
     int qTimer = 0;
     bool plIsCounting = false;
     bool qIsCounting = false;
-
 
     void Start()
     {
@@ -52,8 +50,8 @@ public class keylistener_questions : MonoBehaviour
                             }
                         }
                         //show operator panel
-                        GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMin = new Vector2(0,0);// left, bottom
-                        GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMax = new Vector2(0,0);  // right,top
+                        GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMin = new Vector2(0, 0);// left, bottom
+                        GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMax = new Vector2(0, 0);  // right,top
                         //set name in operator panel
                         GameObject.Find("txt_aPlayerName").GetComponent<TextMeshProUGUI>().text = gs.players[answered].playerName;
                         //add player to answered players
@@ -90,11 +88,12 @@ public class keylistener_questions : MonoBehaviour
         {
             GameObject.Find("txt_plTimer").GetComponent<TextMeshProUGUI>().color = new Color32(255, 255, 255, 255);
         }
-        if(plIsCounting == true)
+        if (plIsCounting == true)
         {
             Invoke("plCountDown", 1f);
         }
     }
+
     void qCountDown()
     {
         qTimer++;
@@ -117,7 +116,7 @@ public class keylistener_questions : MonoBehaviour
     {
         foreach (GameObject player in gs.playerObjects)
         {
-            if(playersAnswered.Contains(player.GetComponent<playerScript>().myID) == false)
+            if (playersAnswered.Contains(player.GetComponent<playerScript>().myID) == false)
             {
                 player.GetComponent<playerScript>().ANSWERS_OPEN();
             }
@@ -137,9 +136,8 @@ public class keylistener_questions : MonoBehaviour
         GameObject.Find("design3").transform.Find("q").Find("qPanel").Find("qName").GetComponent<TextMeshProUGUI>().text = gs.categoryList[gs.selectedC].questions[gs.selectedQ].questionText;
         GameObject.Find("tmp_plAnswerCorrectAnswer").GetComponent<TextMeshProUGUI>().text = gs.categoryList[gs.selectedC].questions[gs.selectedQ].answer;
 
-        //show image 
+        //show image
         GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color = new Color(GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color.r, GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color.g, GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color.b, 255);
-
 
         //play music (unless video question)
         if (gs.categoryList[gs.selectedC].questions[gs.selectedQ].PresentationType != 2)
@@ -159,7 +157,6 @@ public class keylistener_questions : MonoBehaviour
             //stop music
             GameObject.Find("scriptHolder").GetComponent<soundScript>().stopMusic();
             //play timeout sound
-
         }
         else
         {
@@ -175,17 +172,17 @@ public class keylistener_questions : MonoBehaviour
 
             //sanitycheck to see if the game is finished
             int qsLeft = 0;
-            for(int i = 0; i<gs.categoryList.Count;i++)
+            for (int i = 0; i < gs.categoryList.Count; i++)
             {
-                foreach(Question thisQ in gs.categoryList[i].questions)
+                foreach (Question thisQ in gs.categoryList[i].questions)
                 {
-                    if(thisQ.isAvailable == true)
+                    if (thisQ.isAvailable == true)
                     {
                         qsLeft++;
                     }
                 }
             }
-            if(qsLeft == 0)
+            if (qsLeft == 0)
             {
                 //all done!
                 gs.finishedGame = true;
@@ -209,7 +206,7 @@ public class keylistener_questions : MonoBehaviour
                 plIsCounting = false;
                 givenScore = true;
                 gs.players[answered].playerScore = gs.players[answered].playerScore + gs.categoryList[gs.selectedC].questions[gs.selectedQ].value;
-                gs.updateCredits(answered, gs.categoryList[gs.selectedC].questions[gs.selectedQ].value,true);
+                gs.updateCredits(answered, gs.categoryList[gs.selectedC].questions[gs.selectedQ].value, true);
                 //hide operator panel
                 GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMin = new Vector2(0, 1304);// left, bottom
                 GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMax = new Vector2(0, 1304);  // right,top
@@ -220,6 +217,7 @@ public class keylistener_questions : MonoBehaviour
             }
         }
     }
+
     public void retractCredits()
     {
         if (answered > -1)
@@ -229,14 +227,14 @@ public class keylistener_questions : MonoBehaviour
                 plIsCounting = false;
                 givenScore = true;
                 gs.players[answered].playerScore = gs.players[answered].playerScore - gs.categoryList[gs.selectedC].questions[gs.selectedQ].value;
-                gs.updateCredits(answered, gs.categoryList[gs.selectedC].questions[gs.selectedQ].value,false);
+                gs.updateCredits(answered, gs.categoryList[gs.selectedC].questions[gs.selectedQ].value, false);
                 //hide operator panel
                 GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMin = new Vector2(0, 1304);// left, bottom
                 GameObject.Find("pnl_answer").GetComponent<RectTransform>().offsetMax = new Vector2(0, 1304);  // right,top
                 //find player object and tell it it to turn red
-                foreach(GameObject plObj in gs.playerObjects)
+                foreach (GameObject plObj in gs.playerObjects)
                 {
-                    if(plObj.GetComponent<playerScript>().myID == answered)
+                    if (plObj.GetComponent<playerScript>().myID == answered)
                     {
                         plObj.GetComponent<playerScript>().ANSWERS_CLOSED();
                     }
@@ -244,10 +242,8 @@ public class keylistener_questions : MonoBehaviour
                 //play wrong answer sound
                 GameObject.Find("scriptHolder").GetComponent<soundScript>().playAnswerWrong();
                 //release players once again for another try
-                Invoke("releaseAnswers",1f);
-
+                Invoke("releaseAnswers", 1f);
             }
         }
     }
-
 }
