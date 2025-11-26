@@ -26,7 +26,7 @@ This software provides a method of creating, editing and presenting a jeopardy s
     - type (Text/text+image/text+video).
     - A question to ask.
     - The answer to said question.
-    - [optional if type is text/image or text/video] a media parth to an image file or video file for the question and/or answer. (This has been tested with .jpg, .jpeg, .png for images, and .mp4 for videos, others might work too).
+    - [optional if type is text/image or text/video] a media part to an image file or video file for the question and/or answer. Images can be .jpg, .jpeg or .png format. Video is tested with .mp4, other formats might work too.
     - [optional] A note: This is something the operator sees while presenting the question, use this to add some trivia or jokes to your presentation.
     - A question color (RGB). This is used on the board and as a background for when showing the question.
 - Press 'save/add' on the right side of the screen.
