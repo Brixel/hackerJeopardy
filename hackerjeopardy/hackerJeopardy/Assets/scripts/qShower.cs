@@ -13,6 +13,7 @@ public class qShower : MonoBehaviour
 {
     gameSettings gameSettings;
     int presentationType;
+
     void Start()
     {
         gameSettings = GameObject.Find("scriptHolder").GetComponent<gameSettings>();
@@ -27,7 +28,6 @@ public class qShower : MonoBehaviour
 
         //set the q panel to the right color
         GameObject.Find("pnl_q").GetComponent<Image>().color = new Color32((byte) gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].questionColorR, (byte)gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].questionColorG, (byte)gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].questionColorB,255);
-
 
         //update category panel colors
         GameObject.Find("design1").transform.Find("q").Find("catPanel").GetComponent<Image>().color = new Color32((byte) gameSettings.categoryList[gameSettings.selectedC].categoryColorR, (byte)gameSettings.categoryList[gameSettings.selectedC].categoryColorG, (byte)gameSettings.categoryList[gameSettings.selectedC].categoryColorB,255);
@@ -53,9 +53,6 @@ public class qShower : MonoBehaviour
         //hide the picture
         GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color = new Color(GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color.r, GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color.g, GameObject.Find("design2").transform.Find("q").Find("qPanel").Find("qImg").GetComponent<Image>().color.b, 0);
 
-
-
-
         //update answer text
         GameObject.Find("design1").transform.Find("a").Find("aPanel").Find("answer").GetComponent<TextMeshProUGUI>().text = gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].answer;
         GameObject.Find("design2").transform.Find("a").Find("aPanel").Find("answer").GetComponent<TextMeshProUGUI>().text = gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].answer;
@@ -78,7 +75,7 @@ public class qShower : MonoBehaviour
                     Debug.Log("file does not exist");
                 }
             }
-        
+
             if (gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].answerImage != "")
             {
                 string totalPath = gameSettings.categoryList[gameSettings.selectedC].questions[gameSettings.selectedQ].answerImage;
@@ -94,7 +91,7 @@ public class qShower : MonoBehaviour
                 }
             }
         }
-        
+
         //need to update video?
         if(presentationType == 2)
         {
@@ -110,9 +107,6 @@ public class qShower : MonoBehaviour
                 //GameObject.Find("aVideo").GetComponent<VideoPlayer>().SetTargetAudioSource(0, Camera.main.GetComponent<AudioSource>());
             }
         }
-        
-
-
 
         //show the correct panel
         switch (presentationType)
@@ -130,14 +124,12 @@ public class qShower : MonoBehaviour
                 GameObject.Find("design3").GetComponent<RectTransform>().offsetMax = new Vector2(0, 0);
                 break;
         }
-
-
     }
 
 
     void Update()
     {
-        
+
     }
 
     public void showAnswer()
@@ -203,7 +195,6 @@ public class qShower : MonoBehaviour
                 Debug.Log("error");
                 return Tex2D;
             }
-                
         }
         return null;                     // Return null if load failed
     }
