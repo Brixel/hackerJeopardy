@@ -75,7 +75,7 @@ public class btn_randomizePlayer : MonoBehaviour, IPointerEnterHandler, IPointer
             currentTarget = 0;
 
             //set name in operator view
-            GameObject.Find("txt_choosingPlayer").GetComponent<TextMeshProUGUI>().text = "Randomzing...";
+            GameObject.Find("txt_choosingPlayer").GetComponent<TextMeshProUGUI>().text = "Randomizing...";
             //change color of name in operator view
             GameObject.Find("txt_choosingPlayer").GetComponent<TextMeshProUGUI>().color = new Color32(0, 0, 255, 255);
 

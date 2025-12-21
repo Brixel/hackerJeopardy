@@ -6,8 +6,6 @@ using UnityEngine.UI;
 using System.IO;
 using TMPro;
 using Unity.Mathematics;
-using TMPro.Examples;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerDownHandler
 {
@@ -15,7 +13,6 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     bool isClicked;
     bool isActive;
     public int lastIndex;
-
 
     void Start()
     {
@@ -25,25 +22,13 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         lastIndex = -1;
     }
 
-    public void setActive()
-    {
-        lastIndex = GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().value;
-        isActive = true;
-    }
-
-    public void setInActive()
-    {
-        isActive = false;
-    }
-
-
     // Update is called once per frame
     void Update()
     {
-        if(isActive == true)
+        if (isActive == true)
         {
             //check if the index has changed
-            if(GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().value != lastIndex)
+            if (GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().value != lastIndex)
             {
                 //clear error message
                 GameObject.Find("txt_catNameError").GetComponent<TextMeshProUGUI>().color = new Color(128, 0, 0, 0);
@@ -71,10 +56,23 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             }
         }
     }
+
+    public void setActive()
+    {
+        lastIndex = GameObject.Find("drp_cats").GetComponent<TMP_Dropdown>().value;
+        isActive = true;
+    }
+
+    public void setInActive()
+    {
+        isActive = false;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         transform.GetComponent<Image>().color = new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a / 2);
     }
+
     public void OnPointerExit(PointerEventData eventData)
     {
         if (isClicked == false)
@@ -82,10 +80,12 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             transform.GetComponent<Image>().color = new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a);
         }
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         clickLogic();
     }
+
     public void OnPointerDown(PointerEventData data)
     {
         clickLogic();
@@ -111,7 +111,6 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                     {
                         isTaken = true;
                     }
-
                 }
                 if (isTaken == true)
                 {
@@ -142,7 +141,6 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                                 thisCat.categoryColorR = int.Parse(GameObject.Find("inp_catColorR").GetComponent<TMP_InputField>().text);
                                 thisCat.categoryColorG = int.Parse(GameObject.Find("inp_catColorG").GetComponent<TMP_InputField>().text);
                                 thisCat.categoryColorB = int.Parse(GameObject.Find("inp_catColorB").GetComponent<TMP_InputField>().text);
-
 
                                 thisCat.questions = new List<Question>();
                                 GameObject.Find("scriptHolder").GetComponent<gameSettings>().categoryList.Add(thisCat);
@@ -188,7 +186,6 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                             isTaken = true;
                         }
                     }
-
                 }
                 if (isTaken == true)
                 {
@@ -251,5 +248,4 @@ public class btn_catSave : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         transform.Find("pnl_text").Find("btnTxt").GetComponent<TextMeshProUGUI>().color = new Color(255, 255, 255, 255);
         isClicked = false;
     }
-
 }
