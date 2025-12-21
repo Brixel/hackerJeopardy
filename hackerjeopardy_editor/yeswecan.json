@@ -1,0 +1,215 @@
+{
+  "gameName": "Security Fundamentals",
+  "tagline": "",
+  "categories": [
+    {
+      "name": "Passwords",
+      "color": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+      },
+      "questions": [
+        {
+          "value": 100,
+          "type": "text",
+          "question": "What is the recommended minimum password length?",
+          "answer": "12 characters",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Some sources say 8, but 12 is better practice",
+          "questionColor": {
+            "r": 0.8,
+            "g": 0.2,
+            "b": 0.2,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 200,
+          "type": "text",
+          "question": "What type of attack tries many password combinations automatically?",
+          "answer": "Brute force attack",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Dictionary attacks are a subset of brute force",
+          "questionColor": {
+            "r": 0.8,
+            "g": 0.2,
+            "b": 0.2,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 300,
+          "type": "text",
+          "question": "What authentication method uses something you know, have, and are?",
+          "answer": "Multi-factor authentication (MFA)",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Also called 2FA when using two factors",
+          "questionColor": {
+            "r": 0.8,
+            "g": 0.2,
+            "b": 0.2,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Network Security",
+      "color": {
+        "r": 0.0,
+        "g": 0.8,
+        "b": 0.0,
+        "a": 1.0
+      },
+      "questions": [
+        {
+          "value": 100,
+          "type": "text",
+          "question": "What port does HTTPS typically use?",
+          "answer": "443",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "HTTP uses port 80, HTTPS uses 443",
+          "questionColor": {
+            "r": 0.2,
+            "g": 0.6,
+            "b": 0.2,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 200,
+          "type": "text",
+          "question": "What does VPN stand for?",
+          "answer": "Virtual Private Network",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Creates encrypted tunnel over public networks",
+          "questionColor": {
+            "r": 0.2,
+            "g": 0.6,
+            "b": 0.2,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 300,
+          "type": "text",
+          "question": "What type of attack intercepts communications between two parties?",
+          "answer": "Man-in-the-middle attack",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Also abbreviated as MITM attack",
+          "questionColor": {
+            "r": 0.2,
+            "g": 0.6,
+            "b": 0.2,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Malware",
+      "color": {
+        "r": 0.5,
+        "g": 0.0,
+        "b": 0.8,
+        "a": 1.0
+      },
+      "questions": [
+        {
+          "value": 100,
+          "type": "text",
+          "question": "What type of malware encrypts files and demands payment?",
+          "answer": "Ransomware",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Famous examples: WannaCry, CryptoLocker",
+          "questionColor": {
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.6,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 200,
+          "type": "text",
+          "question": "What malware appears legitimate but contains malicious code?",
+          "answer": "Trojan horse",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Named after the Greek mythology story",
+          "questionColor": {
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.6,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 300,
+          "type": "text",
+          "question": "What type of malware spreads automatically across networks?",
+          "answer": "Worm",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "Unlike viruses, worms don't need host files",
+          "questionColor": {
+            "r": 0.4,
+            "g": 0.1,
+            "b": 0.6,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cloud",
+      "color": {
+        "r": 0.0,
+        "g": 0.5,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "questions": [
+        {
+          "value": 100,
+          "type": "text",
+          "question": "Hetzner, netcup, Amazon",
+          "answer": "What is a cloud provider",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "List of cloud providers",
+          "questionColor": {
+            "r": 0.2,
+            "g": 0.2,
+            "b": 0.8,
+            "a": 1.0
+          }
+        },
+        {
+          "value": 200,
+          "type": "text",
+          "question": "",
+          "answer": "",
+          "questionMediaPath": null,
+          "answerMediaPath": null,
+          "note": "",
+          "questionColor": {
+            "r": 0.2,
+            "g": 0.2,
+            "b": 0.8,
+            "a": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}
